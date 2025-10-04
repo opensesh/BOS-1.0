@@ -79,7 +79,7 @@ export default function SystemSection({ defaultOpen = false, lazyLoad = false }:
             </div>
           </div>
         ) : (
-          <div className="text-brand-vanilla/50 font-text text-caption">
+          <div className="text-brand-vanilla/50 font-text text-caption text-center">
             Content loading...
           </div>
         )}

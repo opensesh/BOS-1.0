@@ -145,7 +145,7 @@ export default function CoreSection({ defaultOpen = true, lazyLoad = false }: Pr
             </div>
           </div>
         ) : (
-          <div className="text-brand-vanilla/50 font-text text-sm">
+          <div className="text-brand-vanilla/50 font-text text-sm text-center">
             Content loading...
           </div>
         )}
