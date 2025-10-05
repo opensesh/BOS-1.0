@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react'
 import PageHero from '@components/sections/PageHero'
 import LogoBlock from '@components/identity/LogoBlock'
 import TypographyBlock from '@components/identity/TypographyBlock'
+import ArtDirectionGallery from '@components/identity/ArtDirectionGallery'
 
 export default function IdentityPage() {
-  const [activeSection, setActiveSection] = useState<string>('logo')
+  const [activeSection, setActiveSection] = useState<string>('guide')
 
   const copyToClipboard = async (text: string) => {
     try {
@@ -83,7 +84,7 @@ export default function IdentityPage() {
   // Scroll spy effect
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['logo', 'color', 'typography', 'guide']
+      const sections = ['guide', 'logo', 'color', 'typography', 'art-direction']
       const header = document.querySelector('header')
       const headerHeight = header ? header.offsetHeight : 60
       const offset = headerHeight + 100
@@ -120,6 +121,44 @@ export default function IdentityPage() {
       />
       <main className="w-full max-w-[1184px] mx-auto px-6 md:px-12 pt-32 pb-32">
         <div className="flex flex-col gap-32">
+        {/* Guide/Iframe Block - Horizontal */}
+        <div id="guide" className="flex flex-col md:flex-row gap-6 items-start w-full">
+          <div className="flex-1 flex flex-col gap-8 min-w-0">
+            <h2 className="font-display text-d2-mobile md:text-d2-tablet xl:text-d2-desktop text-brand-vanilla">
+              Guide
+            </h2>
+            <p className="font-text text-b1 text-brand-vanilla">
+              Welcome to Open Session. Here you can find all of our brand guidelines. Covering everything from messaging to art direction and even AI guidance
+            </p>
+            <div className="flex gap-3 items-center">
+              <a
+                href="https://www.figma.com/proto/t6ibLjzJFXY6HzU0bIahxw/BRAND-OS?page-id=19939%3A21956&node-id=20255-18337&viewport=465%2C-92%2C0.05&t=Fjx1co9Q53DPCGLw-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=20255%3A18337"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-brand-vanilla hover:bg-brand-vanilla/90 transition-colors px-4 py-3 rounded-full flex gap-2 items-center min-w-[128px] justify-center"
+              >
+                <span className="font-text text-button text-brand-charcoal">Source</span>
+                <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
+                  <path d="M3.33333 8H12.6667M12.6667 8L8.66667 4M12.6667 8L8.66667 12"
+                    stroke="#191919"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div className="flex-1 min-w-[300px] h-[399px] rounded-xl overflow-hidden">
+            <iframe
+              style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
+              className="w-full h-full rounded-xl"
+              src="https://embed.figma.com/proto/t6ibLjzJFXY6HzU0bIahxw/BRAND-OS?page-id=19939%3A21956&node-id=20255-18337&viewport=465%2C-92%2C0.05&scaling=scale-down&content-scaling=fixed&starting-point-node-id=20255%3A18337&embed-host=share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
         {/* Logo Block */}
         <div id="logo">
           <LogoBlock />
@@ -262,42 +301,9 @@ export default function IdentityPage() {
           <TypographyBlock />
         </div>
 
-        {/* Guide/Iframe Block - Horizontal */}
-        <div id="guide" className="flex gap-6 items-start w-full">
-          <div className="flex-1 flex flex-col gap-8 min-w-0">
-            <h2 className="font-display text-d2-mobile md:text-d2-tablet xl:text-d2-desktop text-brand-vanilla">
-              Guide
-            </h2>
-            <p className="font-text text-b1 text-brand-vanilla">
-              Welcome to Open Session. Here you can find all of our brand guidelines. Covering everything from messaging to art direction and even AI guidance
-            </p>
-            <div className="flex gap-3 items-center">
-              <a
-                href="https://www.figma.com/proto/t6ibLjzJFXY6HzU0bIahxw/BRAND-OS?page-id=19939%3A21956&node-id=20255-18337&viewport=465%2C-92%2C0.05&t=Fjx1co9Q53DPCGLw-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=20255%3A18337"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-brand-vanilla hover:bg-brand-vanilla/90 transition-colors px-4 py-3 rounded-full flex gap-2 items-center min-w-[128px] justify-center"
-              >
-                <span className="font-text text-button text-brand-charcoal">Source</span>
-                <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
-                  <path d="M3.33333 8H12.6667M12.6667 8L8.66667 4M12.6667 8L8.66667 12"
-                    stroke="#191919"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div className="flex-1 min-w-[300px] h-[399px] rounded-xl overflow-hidden">
-            <iframe
-              style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
-              className="w-full h-full rounded-xl"
-              src="https://embed.figma.com/proto/t6ibLjzJFXY6HzU0bIahxw/BRAND-OS?page-id=19939%3A21956&node-id=20255-18337&viewport=465%2C-92%2C0.05&scaling=scale-down&content-scaling=fixed&starting-point-node-id=20255%3A18337&embed-host=share"
-              allowFullScreen
-            />
-          </div>
+        {/* Art Direction Block */}
+        <div id="art-direction">
+          <ArtDirectionGallery />
         </div>
       </div>
     </main>

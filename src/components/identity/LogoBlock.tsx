@@ -30,7 +30,7 @@ export default function LogoBlock() {
   }
 
   return (
-    <div className="flex flex-col gap-12 px-6 md:px-12 py-12">
+    <div className="flex flex-col gap-12 py-12">
       {/* Section Title */}
       <div className="flex flex-col gap-8">
         <h2 className="font-display text-d2-mobile md:text-d2-tablet tracking-[-2px] text-brand-vanilla">

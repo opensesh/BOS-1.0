@@ -136,10 +136,10 @@ export default function ArtDirectionGallery() {
 
   return (
     <div className="flex flex-col gap-6">
-      {/* Title - matching Color subsection styling */}
-      <h3 className="font-display text-h4-mobile md:text-h4-tablet xl:text-h4-desktop text-brand-vanilla">
+      {/* Title - H2 styling */}
+      <h2 className="font-display text-d2-mobile md:text-d2-tablet tracking-[-2px] text-brand-vanilla">
         Art Direction
-      </h3>
+      </h2>
 
       {/* Description */}
       <p className="font-text text-b1 text-brand-vanilla/70 max-w-3xl">
@@ -155,7 +155,7 @@ export default function ArtDirectionGallery() {
               key={category}
               onClick={() => handleCategoryChange(category)}
               className={cn(
-                "px-5 py-2.5 rounded-full font-text text-button transition-all duration-200",
+                "px-3 py-2 rounded-full font-text text-[14px] transition-all duration-200",
                 isActive
                   ? "bg-brand-aperol text-brand-vanilla shadow-lg shadow-brand-aperol/20"
                   : "bg-brand-vanilla/10 text-brand-vanilla/70 hover:bg-brand-vanilla/20 hover:text-brand-vanilla"
@@ -169,12 +169,12 @@ export default function ArtDirectionGallery() {
           );
         })}
 
-        {/* Download Button */}
+        {/* Download Button - Icon Only */}
         <motion.button
           onClick={handleDownload}
           disabled={isDownloading}
           className={cn(
-            "px-5 py-2.5 rounded-full font-text text-button transition-all duration-200 flex items-center gap-2 ml-auto",
+            "w-10 h-10 rounded-full font-text transition-all duration-200 flex items-center justify-center ml-auto",
             isDownloading
               ? "bg-brand-vanilla/5 text-brand-vanilla/40 cursor-not-allowed"
               : "bg-brand-charcoal border border-brand-vanilla/20 text-brand-vanilla hover:bg-brand-vanilla/10"
@@ -184,7 +184,6 @@ export default function ArtDirectionGallery() {
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
           <Download className="w-4 h-4" />
-          {isDownloading ? "Downloading..." : `Download ${selectedCategory}`}
         </motion.button>
       </div>
 
@@ -203,7 +202,7 @@ export default function ArtDirectionGallery() {
               className="relative cursor-pointer overflow-hidden rounded-3xl"
               initial={{ width: "5rem", height: "24rem" }}
               animate={{
-                width: activeImage === index ? "24rem" : "5rem",
+                width: activeImage === index ? "28rem" : "5rem",
                 height: "24rem",
               }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -221,7 +220,7 @@ export default function ArtDirectionGallery() {
                 )}
               </AnimatePresence>
               <AnimatePresence>
-                {activeImage === index && (
+                {activeImage === index && filteredImages.length <= 5 && (
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

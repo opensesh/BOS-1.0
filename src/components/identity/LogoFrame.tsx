@@ -263,10 +263,11 @@ const LogoFrame = forwardRef<LogoFrameHandle, LogoFrameProps>(({
   }
 
   // Determine if this logo should have square aspect ratio (all frames on mobile need square to fit buttons)
-  const isSquareFrame = logoType === 'combo' || logoType === 'stacked' || logoType === 'brandmark' || logoType === 'horizontal' || logoType === 'core' || logoType === 'filled' || logoType === 'outline'
+  const isSquareFrame = logoType === 'combo' || logoType === 'stacked' || logoType === 'brandmark' || logoType === 'core' || logoType === 'filled' || logoType === 'outline'
+  const isHorizontalFrame = logoType === 'horizontal'
 
   return (
-    <div className={`relative flex flex-col bg-black rounded-3xl min-w-[260px] flex-1 basis-0 grow overflow-hidden ${isSquareFrame ? 'aspect-square' : ''}`}>
+    <div className={`relative flex flex-col bg-black rounded-3xl min-w-[260px] flex-1 basis-0 grow overflow-hidden ${isSquareFrame ? 'aspect-square md:aspect-square' : ''} ${isHorizontalFrame ? 'aspect-square md:aspect-auto md:w-full md:min-h-[260px]' : ''}`}>
       {/* Border overlay */}
       <div aria-hidden="true" className="absolute border border-[#787878] border-solid inset-0 pointer-events-none rounded-3xl z-10" style={{ borderColor: currentColor === 'Charcoal' ? 'transparent' : '#787878' }} />
 
