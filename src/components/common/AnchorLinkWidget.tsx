@@ -367,6 +367,7 @@ export default function AnchorLinkWidget({ menuOpen, setMenuOpen }: AnchorLinkWi
       subItems: [
         { id: 'logo', label: 'Logo' },
         { id: 'color', label: 'Color' },
+        { id: 'art-direction', label: 'Art Direction' },
         { id: 'typography', label: 'Typography' },
         { id: 'guide', label: 'Guide' },
       ],

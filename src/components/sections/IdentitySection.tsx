@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import SectionDropdown from '@components/common/SectionDropdown'
 import LogoBlock from '@components/identity/LogoBlock'
 import TypographyBlock from '@components/identity/TypographyBlock'
+import ArtDirectionGallery from '@components/identity/ArtDirectionGallery'
 import useIntersectionObserver from '@hooks/useIntersectionObserver'
 
 type Props = { defaultOpen?: boolean; lazyLoad?: boolean }
@@ -268,6 +269,11 @@ export default function IdentitySection({ defaultOpen = false, lazyLoad = false 
                     </div>
                   ))}
                 </div>
+              </div>
+
+              {/* Art Direction Gallery - Subsection under Color */}
+              <div id="art-direction">
+                <ArtDirectionGallery />
               </div>
             </div>
 
