@@ -254,7 +254,7 @@ const LogoFrame = forwardRef<LogoFrameHandle, LogoFrameProps>(({
     return (
       <div className="w-full h-full flex items-center justify-center">
         <div
-          className="flex items-center justify-center"
+          className="flex items-center justify-center overflow-hidden"
           style={{ width: sizeScale, height: sizeScale }}
           dangerouslySetInnerHTML={{ __html: responsiveSvg }}
         />
