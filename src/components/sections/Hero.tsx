@@ -19,11 +19,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative mx-auto w-full pt-32 pb-20 px-6 text-center md:px-8
-      h-[690px] overflow-hidden
-      bg-[linear-gradient(to_bottom,#FFFAEE,#FFFAEE_50%,#e8e8e8_88%)]
-      dark:bg-[linear-gradient(to_bottom,#191919,#191919_50%,#0a0a0a_88%)]
-      rounded-b-xl flex flex-col items-center justify-center"
+      className="relative w-full h-screen overflow-hidden bg-brand-charcoal"
     >
       {/* FaultyTerminal Effect - Layer 0 (behind everything) */}
       <div
@@ -31,7 +27,7 @@ export default function Hero() {
         style={{ zIndex: 0 }}
       >
         <FaultyTerminal
-          scale={1.2}
+          scale={1}
           gridMul={[1, 1]}
           digitSize={1.5}
           timeScale={0.5}
@@ -49,77 +45,84 @@ export default function Hero() {
         />
       </div>
 
-      {/* Centered Content */}
-      <div className="relative w-full max-w-7xl mx-auto px-4" style={{ zIndex: 10 }}>
-        {/* Title */}
-        <h1
-          className="animate-fade-in text-balance text-center
-          text-brand-vanilla py-6 font-display text-d1-mobile md:text-d1-tablet xl:text-d1-desktop
-          leading-none tracking-tighter"
-          style={{ animationDelay: '0.2s', opacity: 0 }}
-        >
-          Brand OS
-        </h1>
+      {/* Centered Content Container - Absolutely positioned for true centering */}
+      <div
+        className="absolute inset-0 flex items-center justify-center px-6 md:px-8"
+        style={{ zIndex: 10 }}
+      >
+        <div className="w-full max-w-7xl text-center">
+          {/* Title */}
+          <h1
+            className="animate-fade-in text-balance text-center
+            text-brand-vanilla font-display text-d1-mobile md:text-d1-tablet xl:text-d1-desktop
+            leading-none tracking-tighter mb-6"
+            style={{ animationDelay: '0.2s', opacity: 0 }}
+          >
+            Brand OS
+          </h1>
 
-        {/* Subtitle with Typewriter */}
-        <div
-          className="animate-fade-in text-center
-          text-2xl tracking-tight font-accent
-          md:text-3xl"
-          style={{ animationDelay: '0.4s', opacity: 0 }}
-        >
-          <p className="text-brand-vanilla">
-            <span>Made to help you </span>
-            <Typewriter
-              text={[
-                "create",
-                "design",
-                "build",
-                "render",
-                "code",
-                "experiment",
-                "make",
-              ]}
-              speed={70}
-              className="text-brand-aperol font-accent"
-              waitTime={1500}
-              deleteSpeed={40}
-              cursorChar="_"
-            />
-          </p>
-        </div>
+          {/* Subtitle with Typewriter */}
+          <div
+            className="animate-fade-in text-center
+            text-2xl tracking-tight font-accent
+            md:text-3xl mb-12"
+            style={{ animationDelay: '0.4s', opacity: 0 }}
+          >
+            <p className="text-brand-vanilla">
+              <span>Made to help you </span>
+              <Typewriter
+                text={[
+                  "create",
+                  "design",
+                  "build",
+                  "render",
+                  "code",
+                  "experiment",
+                  "make",
+                ]}
+                speed={70}
+                className="text-brand-aperol font-accent"
+                waitTime={1500}
+                deleteSpeed={40}
+                cursorChar="_"
+              />
+            </p>
+          </div>
 
-        {/* Navigation Buttons */}
-        <div
-          className="animate-fade-in flex flex-wrap gap-4 justify-center mt-12"
-          style={{ animationDelay: '0.6s', opacity: 0 }}
-        >
-          <button
-            onClick={() => handleScrollToSection('core')}
-            className="bg-brand-vanilla hover:bg-brand-aperol text-brand-charcoal hover:text-brand-vanilla transition-colors px-6 py-3 rounded-full font-text text-button min-w-[128px]"
+          {/* Navigation Buttons */}
+          <div
+            className="animate-fade-in flex flex-wrap gap-4 justify-center"
+            style={{ animationDelay: '0.6s', opacity: 0 }}
           >
-            Core
-          </button>
-          <button
-            onClick={() => handleScrollToSection('identity')}
-            className="bg-brand-vanilla hover:bg-brand-aperol text-brand-charcoal hover:text-brand-vanilla transition-colors px-6 py-3 rounded-full font-text text-button min-w-[128px]"
-          >
-            Identity
-          </button>
-          <button
-            onClick={() => handleScrollToSection('system')}
-            className="bg-brand-vanilla hover:bg-brand-aperol text-brand-charcoal hover:text-brand-vanilla transition-colors px-6 py-3 rounded-full font-text text-button min-w-[128px]"
-          >
-            System
-          </button>
+            <button
+              onClick={() => handleScrollToSection('core')}
+              className="bg-brand-vanilla hover:bg-brand-aperol text-brand-charcoal hover:text-brand-vanilla transition-colors px-6 py-3 rounded-full font-text text-button min-w-[128px]"
+            >
+              Core
+            </button>
+            <button
+              onClick={() => handleScrollToSection('identity')}
+              className="bg-brand-vanilla hover:bg-brand-aperol text-brand-charcoal hover:text-brand-vanilla transition-colors px-6 py-3 rounded-full font-text text-button min-w-[128px]"
+            >
+              Identity
+            </button>
+            <button
+              onClick={() => handleScrollToSection('system')}
+              className="bg-brand-vanilla hover:bg-brand-aperol text-brand-charcoal hover:text-brand-vanilla transition-colors px-6 py-3 rounded-full font-text text-button min-w-[128px]"
+            >
+              System
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Bottom Fade */}
+      {/* Bottom Gradient Blend */}
       <div
-        className="animate-fade-up-no-translate relative mt-32 opacity-0 [perspective:2000px]
-        after:absolute after:inset-0 after:z-50
-        after:[background:linear-gradient(to_top,#191919_10%,transparent)]"
+        className="absolute bottom-0 left-0 right-0 h-1/2 pointer-events-none"
+        style={{
+          background: 'linear-gradient(to top, #191919 0%, transparent 100%)',
+          zIndex: 5
+        }}
       />
     </section>
   )

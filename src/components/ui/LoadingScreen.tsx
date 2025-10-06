@@ -12,11 +12,9 @@ export function LoadingScreen({ onComplete, minDuration = 2000 }: LoadingScreenP
 
   useEffect(() => {
     const updateDimensions = () => {
-      // Use the diagonal to ensure full coverage on all devices
-      const diagonal = Math.sqrt(
-        Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2)
-      )
-      setDimensions({ width: diagonal, height: diagonal })
+      // Use largest dimension to create a perfect square that fills viewport
+      const size = Math.max(window.innerWidth, window.innerHeight)
+      setDimensions({ width: size, height: size })
     }
 
     updateDimensions()
@@ -42,7 +40,16 @@ export function LoadingScreen({ onComplete, minDuration = 2000 }: LoadingScreenP
         isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
     >
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div
+        className="absolute flex items-center justify-center"
+        style={{
+          width: `${dimensions.width}px`,
+          height: `${dimensions.height}px`,
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)'
+        }}
+      >
         <DitheringShader
           shape="ripple"
           type="2x2"
@@ -53,10 +60,9 @@ export function LoadingScreen({ onComplete, minDuration = 2000 }: LoadingScreenP
           width={dimensions.width}
           height={dimensions.height}
           style={{
-            width: `${dimensions.width}px`,
-            height: `${dimensions.height}px`,
-            minWidth: '100vw',
-            minHeight: '100vh'
+            width: '100%',
+            height: '100%',
+            display: 'block'
           }}
         />
       </div>
