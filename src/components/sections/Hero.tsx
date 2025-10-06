@@ -1,5 +1,3 @@
-import { ChevronRight } from "lucide-react"
-import Button from "@components/common/Button"
 import FaultyTerminal from "@components/ui/faulty-terminal"
 import { Typewriter } from "@components/ui/typewriter"
 
@@ -66,8 +64,8 @@ export default function Hero() {
         {/* Subtitle with Typewriter */}
         <div
           className="animate-fade-in text-center
-          text-xl tracking-tight font-accent
-          md:text-2xl lg:text-3xl"
+          text-2xl tracking-tight font-accent
+          md:text-3xl"
           style={{ animationDelay: '0.4s', opacity: 0 }}
         >
           <p className="text-brand-vanilla">

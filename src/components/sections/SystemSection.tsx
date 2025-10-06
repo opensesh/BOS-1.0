@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import SectionDropdown from '@components/common/SectionDropdown'
 import useIntersectionObserver from '@hooks/useIntersectionObserver'
+import MarkdownBlock from '@components/system/MarkdownBlock'
 
 type Props = { defaultOpen?: boolean; lazyLoad?: boolean }
 
@@ -77,6 +78,9 @@ export default function SystemSection({ defaultOpen = false, lazyLoad = false }:
                 />
               </div>
             </div>
+
+            {/* Markdown Block */}
+            <MarkdownBlock />
           </div>
         ) : (
           <div className="text-brand-vanilla/50 font-text text-caption text-center">
