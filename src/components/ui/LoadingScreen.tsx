@@ -12,8 +12,11 @@ export function LoadingScreen({ onComplete, minDuration = 2000 }: LoadingScreenP
 
   useEffect(() => {
     const updateDimensions = () => {
-      const size = Math.max(window.innerWidth, window.innerHeight)
-      setDimensions({ width: size, height: size })
+      // Use the diagonal to ensure full coverage on all devices
+      const diagonal = Math.sqrt(
+        Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2)
+      )
+      setDimensions({ width: diagonal, height: diagonal })
     }
 
     updateDimensions()
