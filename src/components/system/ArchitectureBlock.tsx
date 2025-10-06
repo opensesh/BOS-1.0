@@ -14,7 +14,7 @@ export default function ArchitectureBlock() {
       {/* Architecture Diagram */}
       <div className="w-full flex justify-center">
         <img
-          src="/architecture-diagram.png"
+          src="/assets/extra/architecture-diagram.png"
           alt="Brand OS Architecture Diagram"
           className="w-3/4 h-auto rounded-2xl"
         />

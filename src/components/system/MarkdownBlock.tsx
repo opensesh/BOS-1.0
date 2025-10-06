@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Copy } from 'lucide-react'
+import { Copy, Download } from 'lucide-react'
 
 interface MarkdownFile {
   name: string
@@ -70,6 +70,18 @@ export default function MarkdownBlock() {
     } catch (err) {
       console.error('Failed to copy:', err)
     }
+  }
+
+  const downloadMarkdown = (content: string, filename: string) => {
+    const blob = new Blob([content], { type: 'text/markdown' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = filename
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
   }
 
   // Syntax highlighting for markdown
@@ -143,7 +155,7 @@ export default function MarkdownBlock() {
     return <span className="text-brand-vanilla/90">{line}</span>
   }
 
-  const renderCodeBlock = (content: string, filename: string, copied: boolean, onCopy: () => void) => {
+  const renderCodeBlock = (content: string, filename: string, copied: boolean, onCopy: () => void, onDownload: () => void) => {
     const lines = content.split('\n')
 
     return (
@@ -155,15 +167,26 @@ export default function MarkdownBlock() {
               {filename}
             </p>
           </div>
-          <button
-            onClick={onCopy}
-            className="bg-brand-charcoal border border-brand-vanilla/20 hover:bg-brand-vanilla/10 transition-colors px-2 py-1 rounded-md flex items-center gap-2"
-          >
-            <Copy className="w-4 h-4 text-brand-vanilla" />
-            <span className="font-text text-label text-brand-vanilla">
-              {copied ? 'Copied!' : 'Copy'}
-            </span>
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={onDownload}
+              className="w-8 h-8 rounded-full bg-brand-charcoal border border-brand-vanilla/20 hover:bg-brand-aperol hover:border-brand-aperol transition-all flex items-center justify-center group"
+              aria-label="Download"
+            >
+              <Download className="w-4 h-4 text-brand-vanilla" />
+            </button>
+            <button
+              onClick={onCopy}
+              className={`w-8 h-8 rounded-full border transition-all flex items-center justify-center group ${
+                copied
+                  ? 'bg-brand-aperol border-brand-aperol'
+                  : 'bg-brand-charcoal border-brand-vanilla/20 hover:bg-brand-aperol hover:border-brand-aperol'
+              }`}
+              aria-label={copied ? 'Copied!' : 'Copy'}
+            >
+              <Copy className="w-4 h-4 text-brand-vanilla" />
+            </button>
+          </div>
         </div>
 
         {/* Content - Scrollable */}
@@ -230,7 +253,8 @@ export default function MarkdownBlock() {
           guidelineContent,
           selectedGuideline.path.split('/').pop() || 'file.md',
           copiedGuideline,
-          () => copyToClipboard(guidelineContent, 'guideline')
+          () => copyToClipboard(guidelineContent, 'guideline'),
+          () => downloadMarkdown(guidelineContent, selectedGuideline.path.split('/').pop() || 'file.md')
         )}
       </div>
 
@@ -262,7 +286,8 @@ export default function MarkdownBlock() {
           writingContent,
           selectedWritingStyle.path.split('/').pop() || 'file.md',
           copiedWriting,
-          () => copyToClipboard(writingContent, 'writing')
+          () => copyToClipboard(writingContent, 'writing'),
+          () => downloadMarkdown(writingContent, selectedWritingStyle.path.split('/').pop() || 'file.md')
         )}
       </div>
     </div>
