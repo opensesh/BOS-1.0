@@ -378,6 +378,7 @@ export default function AnchorLinkWidget({ menuOpen, setMenuOpen }: AnchorLinkWi
       subItems: [
         { id: 'figma', label: 'Figma' },
         { id: 'markdown', label: 'Markdown' },
+        { id: 'architecture', label: 'Architecture' },
       ],
     },
   ]
