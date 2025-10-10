@@ -22,6 +22,9 @@ export default defineConfig(({ mode }) => ({
     port: 5173,
     strictPort: false,
     open: false, // Don't auto-open browser
+    // Allow VS Code webview and prevent service worker issues
+    cors: true,
+    host: '0.0.0.0', // Listen on all network interfaces for better webview support
   },
   preview: {
     port: 5173,
