@@ -248,13 +248,13 @@ const LogoFrame = forwardRef<LogoFrameHandle, LogoFrameProps>(({
 
     const responsiveSvg = svgContent.replace(
       /<svg([^>]*)>/,
-      `<svg$1 style="width: ${sizeScale}; height: ${sizeScale}; max-width: 100%; max-height: 100%;">`
+      `<svg$1 style="width: 100%; height: 100%; max-width: 100%; max-height: 100%;">`
     )
 
     return (
       <div className="w-full h-full flex items-center justify-center">
         <div
-          className="flex items-center justify-center overflow-hidden"
+          className="flex items-center justify-center"
           style={{ width: sizeScale, height: sizeScale }}
           dangerouslySetInnerHTML={{ __html: responsiveSvg }}
         />
