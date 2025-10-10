@@ -282,7 +282,7 @@ export default function MarkdownBlock() {
 
       {/* Brand Guidelines */}
       <div className="flex flex-col gap-6">
-        <h3 className="font-display text-h2-mobile md:text-h2-tablet tracking-[-2px] text-brand-vanilla">
+        <h3 className="font-display text-h2-mobile md:text-h2-tablet xl:text-h2-desktop text-brand-vanilla">
           Brand Guidelines
         </h3>
 
@@ -316,7 +316,7 @@ export default function MarkdownBlock() {
 
       {/* Writing Styles */}
       <div className="flex flex-col gap-6">
-        <h3 className="font-display text-h2-mobile md:text-h2-tablet tracking-[-2px] text-brand-vanilla">
+        <h3 className="font-display text-h2-mobile md:text-h2-tablet xl:text-h2-desktop text-brand-vanilla">
           Writing Styles
         </h3>
 
