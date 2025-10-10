@@ -245,15 +245,23 @@ const LogoFrame = forwardRef<LogoFrameHandle, LogoFrameProps>(({
     // Accessory logos: For outline/filled, use height-based sizing to match Core visual weight
     // Core is 176x88 (wide), outline/filled are 100x172 (tall)
 
-    // Strip problematic glass effect elements that cause overflow and duplicate layers
+    // Strip ONLY the foreignObject that causes overflow - keep the glass filter effects
     let processedSvg = svgContent
     if (currentColor === 'Glass') {
-      // Remove foreignObject blur elements
+      // Remove ONLY the foreignObject backdrop blur that extends beyond bounds
       processedSvg = svgContent.replace(/<foreignObject[^>]*>.*?<\/foreignObject>/gs, '')
-      // Remove filter attribute from main group that references oversized filter definitions
-      processedSvg = processedSvg.replace(/(<g[^>]*)\s+filter="[^"]*"/g, '$1')
-      // Remove the entire filter definition from defs that causes the oversized bounding box
-      processedSvg = processedSvg.replace(/<filter[^>]*>.*?<\/filter>/gs, '')
+
+      // Fix the filter bounding box to match the viewBox to prevent overflow
+      // Extract viewBox dimensions
+      const viewBoxMatch = svgContent.match(/viewBox="([^"]+)"/)
+      if (viewBoxMatch) {
+        const [x, y, width, height] = viewBoxMatch[1].split(' ')
+        // Replace oversized filter bounds with viewBox bounds
+        processedSvg = processedSvg.replace(
+          /<filter([^>]*)\s+x="[^"]*"\s+y="[^"]*"\s+width="[^"]*"\s+height="[^"]*"/g,
+          `<filter$1 x="${x}" y="${y}" width="${width}" height="${height}"`
+        )
+      }
     }
 
     // Ensure SVG doesn't overflow container
