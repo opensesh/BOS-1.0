@@ -245,10 +245,10 @@ const LogoFrame = forwardRef<LogoFrameHandle, LogoFrameProps>(({
     // Accessory logos: For outline/filled, use height-based sizing to match Core visual weight
     // Core is 176x88 (wide), outline/filled are 100x172 (tall)
 
-    // Add overflow: hidden to contain glass effect foreignObject elements
+    // Clip glass effect foreignObject elements that extend beyond viewBox
     const responsiveSvg = svgContent.replace(
       /<svg([^>]*)>/,
-      `<svg$1 style="width: 100%; height: 100%; max-width: 100%; max-height: 100%; overflow: visible;">`
+      `<svg$1 style="width: 100%; height: 100%; max-width: 100%; max-height: 100%; overflow: hidden;">`
     )
 
     // For outline and filled logos, use height-based constraint to maintain aspect ratio

@@ -34,12 +34,12 @@ export default {
         
         // HEADING STYLES (Mobile sizes - use with md: and xl: for responsive)
         // Heading 1: 32px → 40px → 56px
-        'h1-mobile': ['32px', { lineHeight: '1.2', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'h1-mobile': ['32px', { lineHeight: '1.2', letterSpacing: '-0.25px', fontWeight: '700' }],
         'h1-tablet': ['40px', { lineHeight: '1.2', letterSpacing: '-1px', fontWeight: '700' }],
         'h1-desktop': ['56px', { lineHeight: '1.2', letterSpacing: '-1.5px', fontWeight: '700' }],
         
         // Heading 2: 28px → 36px → 48px
-        'h2-mobile': ['28px', { lineHeight: '1.2', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'h2-mobile': ['28px', { lineHeight: '1.2', letterSpacing: '-0.25px', fontWeight: '700' }],
         'h2-tablet': ['36px', { lineHeight: '1.2', letterSpacing: '-0.5px', fontWeight: '700' }],
         'h2-desktop': ['48px', { lineHeight: '1.2', letterSpacing: '-1px', fontWeight: '700' }],
         

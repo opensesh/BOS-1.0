@@ -45,12 +45,12 @@ export default function Hero() {
         />
       </div>
 
-      {/* Centered Content Container - Visually centered accounting for header */}
+      {/* Centered Content Container - Visually centered accounting for header and mobile bottom nav */}
       <div
         className="absolute inset-0 flex items-center justify-center px-6 md:px-8"
         style={{ zIndex: 10 }}
       >
-        <div className="w-full max-w-7xl text-center" style={{ transform: 'translateY(-30px)' }}>
+        <div className="w-full max-w-7xl text-center md:translate-y-[-30px]">
           {/* Title */}
           <h1
             className="animate-fade-in text-balance text-center
