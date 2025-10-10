@@ -245,11 +245,15 @@ const LogoFrame = forwardRef<LogoFrameHandle, LogoFrameProps>(({
     // Accessory logos: For outline/filled, use height-based sizing to match Core visual weight
     // Core is 176x88 (wide), outline/filled are 100x172 (tall)
 
-    // Strip foreignObject elements from glass SVGs to prevent overflow issues
+    // Strip problematic glass effect elements that cause overflow and duplicate layers
     let processedSvg = svgContent
     if (currentColor === 'Glass') {
-      // Remove foreignObject blur elements that cause overflow
+      // Remove foreignObject blur elements
       processedSvg = svgContent.replace(/<foreignObject[^>]*>.*?<\/foreignObject>/gs, '')
+      // Remove filter attribute from main group that references oversized filter definitions
+      processedSvg = processedSvg.replace(/(<g[^>]*)\s+filter="[^"]*"/g, '$1')
+      // Remove the entire filter definition from defs that causes the oversized bounding box
+      processedSvg = processedSvg.replace(/<filter[^>]*>.*?<\/filter>/gs, '')
     }
 
     // Ensure SVG doesn't overflow container
