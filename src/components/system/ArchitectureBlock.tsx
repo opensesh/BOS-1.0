@@ -16,7 +16,7 @@ export default function ArchitectureBlock() {
         <img
           src={`${import.meta.env.BASE_URL}assets/extra/Brand OS_claude architechture.png`}
           alt="Brand OS Architecture Diagram"
-          className="w-full h-auto max-w-5xl object-contain"
+          className="w-full h-auto max-w-5xl object-contain rounded-xl"
         />
       </div>
     </div>
