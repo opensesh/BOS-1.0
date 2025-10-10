@@ -245,32 +245,42 @@ const LogoFrame = forwardRef<LogoFrameHandle, LogoFrameProps>(({
     // Accessory logos: For outline/filled, use height-based sizing to match Core visual weight
     // Core is 176x88 (wide), outline/filled are 100x172 (tall)
 
-    // Clip glass effect foreignObject elements that extend beyond viewBox
+    // Ensure SVG doesn't overflow container
     const responsiveSvg = svgContent.replace(
       /<svg([^>]*)>/,
-      `<svg$1 style="width: 100%; height: 100%; max-width: 100%; max-height: 100%; overflow: hidden;">`
+      `<svg$1 style="width: 100%; height: 100%; max-width: 100%; max-height: 100%;">`
     )
 
     // For outline and filled logos, use height-based constraint to maintain aspect ratio
     if (logoType === 'filled' || logoType === 'outline') {
       return (
-        <div className="w-full h-full flex items-center justify-center overflow-hidden">
+        <div className="w-full h-full flex items-center justify-center">
           <div
-            className="flex items-center justify-center overflow-hidden"
-            style={{ height: '70%', width: 'auto' }}
+            className="flex items-center justify-center"
+            style={{
+              height: '70%',
+              width: 'auto',
+              clipPath: 'inset(0)',
+              overflow: 'hidden'
+            }}
             dangerouslySetInnerHTML={{ __html: responsiveSvg }}
           />
         </div>
       )
     }
 
-    // For all other logos (including core), use square sizing with overflow hidden to clip glass effects
+    // For all other logos (including core), use square sizing with clip-path to properly clip glass effects
     const sizeScale = '85.5%'
     return (
-      <div className="w-full h-full flex items-center justify-center overflow-hidden">
+      <div className="w-full h-full flex items-center justify-center">
         <div
-          className="flex items-center justify-center overflow-hidden"
-          style={{ width: sizeScale, height: sizeScale }}
+          className="flex items-center justify-center"
+          style={{
+            width: sizeScale,
+            height: sizeScale,
+            clipPath: 'inset(0)',
+            overflow: 'hidden'
+          }}
           dangerouslySetInnerHTML={{ __html: responsiveSvg }}
         />
       </div>
