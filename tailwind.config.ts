@@ -39,8 +39,8 @@ export default {
         'h1-desktop': ['56px', { lineHeight: '1.2', letterSpacing: '-1.5px', fontWeight: '700' }],
         
         // Heading 2: 28px → 36px → 48px
-        'h2-mobile': ['28px', { lineHeight: '1.2', letterSpacing: '-0.25px', fontWeight: '700' }],
-        'h2-tablet': ['36px', { lineHeight: '1.2', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'h2-mobile': ['28px', { lineHeight: '1.2', letterSpacing: '-0.75px', fontWeight: '700' }],
+        'h2-tablet': ['36px', { lineHeight: '1.2', letterSpacing: '-0.75px', fontWeight: '700' }],
         'h2-desktop': ['48px', { lineHeight: '1.2', letterSpacing: '-1px', fontWeight: '700' }],
         
         // Heading 3: 24px → 30px → 40px

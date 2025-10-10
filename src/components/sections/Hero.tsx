@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative w-full h-screen overflow-hidden bg-brand-charcoal"
+      className="relative w-full h-dvh overflow-hidden bg-brand-charcoal"
     >
       {/* FaultyTerminal Effect - Layer 0 (behind everything) */}
       <div
@@ -50,7 +50,7 @@ export default function Hero() {
         className="absolute inset-0 flex items-center justify-center px-6 md:px-8"
         style={{ zIndex: 10 }}
       >
-        <div className="w-full max-w-7xl text-center md:translate-y-[-30px]">
+        <div className="w-full max-w-7xl text-center -translate-y-[10px] md:-translate-y-[30px]">
           {/* Title */}
           <h1
             className="animate-fade-in text-balance text-center

@@ -31,6 +31,7 @@ export default function MarkdownBlock() {
   const [writingContent, setWritingContent] = useState('')
   const [copiedGuideline, setCopiedGuideline] = useState(false)
   const [copiedWriting, setCopiedWriting] = useState(false)
+  const [hoveredButton, setHoveredButton] = useState<string | null>(null)
 
   // Fetch markdown content
   useEffect(() => {
@@ -87,10 +88,16 @@ export default function MarkdownBlock() {
       await navigator.clipboard.writeText(content)
       if (type === 'guideline') {
         setCopiedGuideline(true)
-        setTimeout(() => setCopiedGuideline(false), 2000)
+        setTimeout(() => {
+          setCopiedGuideline(false)
+          setHoveredButton(null)
+        }, 1500)
       } else {
         setCopiedWriting(true)
-        setTimeout(() => setCopiedWriting(false), 2000)
+        setTimeout(() => {
+          setCopiedWriting(false)
+          setHoveredButton(null)
+        }, 1500)
       }
     } catch (err) {
       console.error('Failed to copy:', err)
@@ -180,7 +187,7 @@ export default function MarkdownBlock() {
     return <span className="text-brand-vanilla/90">{line}</span>
   }
 
-  const renderCodeBlock = (content: string, filename: string, copied: boolean, onCopy: () => void, onDownload: () => void) => {
+  const renderCodeBlock = (content: string, filename: string, copied: boolean, onCopy: () => void, onDownload: () => void, blockId: string) => {
     const lines = content.split('\n')
 
     return (
@@ -193,24 +200,47 @@ export default function MarkdownBlock() {
             </p>
           </div>
           <div className="flex items-center gap-2">
-            <button
-              onClick={onDownload}
-              className="w-8 h-8 rounded-full bg-brand-charcoal border border-brand-vanilla/20 hover:bg-brand-aperol hover:border-brand-aperol transition-all flex items-center justify-center group"
-              aria-label="Download"
-            >
-              <Download className="w-4 h-4 text-brand-vanilla" />
-            </button>
-            <button
-              onClick={onCopy}
-              className={`w-8 h-8 rounded-full border transition-all flex items-center justify-center group ${
-                copied
-                  ? 'bg-brand-aperol border-brand-aperol'
-                  : 'bg-brand-charcoal border-brand-vanilla/20 hover:bg-brand-aperol hover:border-brand-aperol'
-              }`}
-              aria-label={copied ? 'Copied!' : 'Copy'}
-            >
-              <Copy className="w-4 h-4 text-brand-vanilla" />
-            </button>
+            <div className="relative">
+              <button
+                onClick={onDownload}
+                onMouseEnter={() => setHoveredButton(`${blockId}-download`)}
+                onMouseLeave={() => setHoveredButton(null)}
+                className="w-8 h-8 rounded-full bg-brand-charcoal border border-brand-vanilla/20 hover:bg-brand-aperol hover:border-brand-aperol transition-all flex items-center justify-center group"
+                aria-label="Download"
+              >
+                <Download className="w-4 h-4 text-brand-vanilla" />
+              </button>
+              {hoveredButton === `${blockId}-download` && (
+                <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-brand-charcoal border border-brand-vanilla/20 px-2 py-1 rounded text-brand-vanilla text-caption whitespace-nowrap pointer-events-none">
+                  Download
+                </div>
+              )}
+            </div>
+            <div className="relative">
+              <button
+                onClick={onCopy}
+                onMouseEnter={() => setHoveredButton(`${blockId}-copy`)}
+                onMouseLeave={() => setHoveredButton(null)}
+                className={`w-8 h-8 rounded-full border transition-all flex items-center justify-center group ${
+                  copied
+                    ? 'bg-brand-aperol border-brand-aperol'
+                    : 'bg-brand-charcoal border-brand-vanilla/20 hover:bg-brand-aperol hover:border-brand-aperol'
+                }`}
+                aria-label={copied ? 'Copied!' : 'Copy'}
+              >
+                <Copy className="w-4 h-4 text-brand-vanilla" />
+              </button>
+              {hoveredButton === `${blockId}-copy` && !copied && (
+                <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-brand-charcoal border border-brand-vanilla/20 px-2 py-1 rounded text-brand-vanilla text-caption whitespace-nowrap pointer-events-none">
+                  Copy
+                </div>
+              )}
+              {copied && (
+                <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-brand-aperol border border-brand-aperol px-2 py-1 rounded text-brand-vanilla text-caption whitespace-nowrap pointer-events-none">
+                  Copied!
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
@@ -279,7 +309,8 @@ export default function MarkdownBlock() {
           selectedGuideline.path.split('/').pop() || 'file.md',
           copiedGuideline,
           () => copyToClipboard(guidelineContent, 'guideline'),
-          () => downloadMarkdown(guidelineContent, selectedGuideline.path.split('/').pop() || 'file.md')
+          () => downloadMarkdown(guidelineContent, selectedGuideline.path.split('/').pop() || 'file.md'),
+          'guideline'
         )}
       </div>
 
@@ -312,7 +343,8 @@ export default function MarkdownBlock() {
           selectedWritingStyle.path.split('/').pop() || 'file.md',
           copiedWriting,
           () => copyToClipboard(writingContent, 'writing'),
-          () => downloadMarkdown(writingContent, selectedWritingStyle.path.split('/').pop() || 'file.md')
+          () => downloadMarkdown(writingContent, selectedWritingStyle.path.split('/').pop() || 'file.md'),
+          'writing'
         )}
       </div>
     </div>
