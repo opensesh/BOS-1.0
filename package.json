@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "tokens:sync": "tsx src/utils/tokenTransformer.ts",
-    "deploy": "npm run build && gh-pages -d dist -t true"
+    "deploy": "npm run build && gh-pages -d dist -t"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
