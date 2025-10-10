@@ -202,9 +202,14 @@ export default function MarkdownBlock() {
           <div className="flex items-center gap-2">
             <div className="relative">
               <button
-                onClick={onDownload}
+                onClick={() => {
+                  onDownload()
+                  // Clear hover state after click (especially important for mobile)
+                  setTimeout(() => setHoveredButton(null), 100)
+                }}
                 onMouseEnter={() => setHoveredButton(`${blockId}-download`)}
                 onMouseLeave={() => setHoveredButton(null)}
+                onTouchEnd={() => setTimeout(() => setHoveredButton(null), 100)}
                 className="w-8 h-8 rounded-full bg-brand-charcoal border border-brand-vanilla/20 hover:bg-brand-aperol hover:border-brand-aperol transition-all flex items-center justify-center group"
                 aria-label="Download"
               >
@@ -218,9 +223,14 @@ export default function MarkdownBlock() {
             </div>
             <div className="relative">
               <button
-                onClick={onCopy}
+                onClick={() => {
+                  onCopy()
+                  // Clear hover state after click (especially important for mobile)
+                  setTimeout(() => setHoveredButton(null), 100)
+                }}
                 onMouseEnter={() => setHoveredButton(`${blockId}-copy`)}
                 onMouseLeave={() => setHoveredButton(null)}
+                onTouchEnd={() => setTimeout(() => setHoveredButton(null), 100)}
                 className={`w-8 h-8 rounded-full border transition-all flex items-center justify-center group ${
                   copied
                     ? 'bg-brand-aperol border-brand-aperol'
