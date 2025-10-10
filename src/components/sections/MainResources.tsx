@@ -209,12 +209,12 @@ export default function MainResources() {
                   { name: 'Logos', folder: 'logos' },
                   { name: 'Fonts', folder: 'fonts' },
                   { name: 'Textures', folder: 'textures' },
-                  { name: 'Art Direction', folder: 'art direction' },
+                  { name: 'Art Direction', folder: 'images' },
                 ].map((item) => (
                   <div key={item.name} className="flex items-end gap-2 border-b border-[#787878] pb-0">
                     <h3 className="font-accent text-h5-mobile text-brand-vanilla flex-1">{item.name}</h3>
                     <button
-                      onClick={() => item.folder === 'fonts' ? alert('Fonts download coming soon') : downloadFolderAsZip(item.folder)}
+                      onClick={() => downloadFolderAsZip(item.folder)}
                       className="flex items-center gap-2 py-1 text-brand-vanilla font-text text-button hover:text-brand-aperol transition-colors"
                     >
                       Download
