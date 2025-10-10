@@ -7,18 +7,21 @@ interface MarkdownFile {
   displayName: string
 }
 
+// Use base URL from Vite config to ensure correct paths in production
+const BASE_URL = import.meta.env.BASE_URL
+
 const BRAND_GUIDELINES: MarkdownFile[] = [
-  { name: 'brand-identity', path: '/brand/core/OS_brand identity.md', displayName: 'Brand Identity' },
-  { name: 'brand-messaging', path: '/brand/core/OS_brand messaging.md', displayName: 'Brand Messaging' },
-  { name: 'art-direction', path: '/brand/core/OS_art direction.md', displayName: 'Art Direction' },
+  { name: 'brand-identity', path: `${BASE_URL}brand/core/OS_brand identity.md`, displayName: 'Brand Identity' },
+  { name: 'brand-messaging', path: `${BASE_URL}brand/core/OS_brand messaging.md`, displayName: 'Brand Messaging' },
+  { name: 'art-direction', path: `${BASE_URL}brand/core/OS_art direction.md`, displayName: 'Art Direction' },
 ]
 
 const WRITING_STYLES: MarkdownFile[] = [
-  { name: 'blog', path: '/brand/writing-styles/blog.md', displayName: 'Blog' },
-  { name: 'creative', path: '/brand/writing-styles/creative.md', displayName: 'Creative' },
-  { name: 'long-form', path: '/brand/writing-styles/long-form.md', displayName: 'Long Form' },
-  { name: 'short-form', path: '/brand/writing-styles/short-form.md', displayName: 'Short Form' },
-  { name: 'strategic', path: '/brand/writing-styles/strategic.md', displayName: 'Strategic' },
+  { name: 'blog', path: `${BASE_URL}brand/writing-styles/blog.md`, displayName: 'Blog' },
+  { name: 'creative', path: `${BASE_URL}brand/writing-styles/creative.md`, displayName: 'Creative' },
+  { name: 'long-form', path: `${BASE_URL}brand/writing-styles/long-form.md`, displayName: 'Long Form' },
+  { name: 'short-form', path: `${BASE_URL}brand/writing-styles/short-form.md`, displayName: 'Short Form' },
+  { name: 'strategic', path: `${BASE_URL}brand/writing-styles/strategic.md`, displayName: 'Strategic' },
 ]
 
 export default function MarkdownBlock() {
@@ -34,22 +37,44 @@ export default function MarkdownBlock() {
     const fetchGuideline = async () => {
       try {
         const response = await fetch(selectedGuideline.path)
+        if (!response.ok) {
+          console.error('Failed to fetch guideline:', response.status, response.statusText)
+          setGuidelineContent('# Error: File not found\n\nThe markdown file could not be loaded. Please check if the file exists.')
+          return
+        }
         const text = await response.text()
+        // Check if we got HTML instead of markdown (404 page)
+        if (text.trim().startsWith('<!DOCTYPE') || text.trim().startsWith('<html')) {
+          console.error('Received HTML instead of markdown')
+          setGuidelineContent('# Error: Invalid file type\n\nReceived HTML instead of markdown content.')
+          return
+        }
         setGuidelineContent(text)
       } catch (error) {
         console.error('Failed to load guideline:', error)
-        setGuidelineContent('# Error loading markdown file')
+        setGuidelineContent('# Error loading markdown file\n\n' + String(error))
       }
     }
 
     const fetchWriting = async () => {
       try {
         const response = await fetch(selectedWritingStyle.path)
+        if (!response.ok) {
+          console.error('Failed to fetch writing style:', response.status, response.statusText)
+          setWritingContent('# Error: File not found\n\nThe markdown file could not be loaded. Please check if the file exists.')
+          return
+        }
         const text = await response.text()
+        // Check if we got HTML instead of markdown (404 page)
+        if (text.trim().startsWith('<!DOCTYPE') || text.trim().startsWith('<html')) {
+          console.error('Received HTML instead of markdown')
+          setWritingContent('# Error: Invalid file type\n\nReceived HTML instead of markdown content.')
+          return
+        }
         setWritingContent(text)
       } catch (error) {
         console.error('Failed to load writing style:', error)
-        setWritingContent('# Error loading markdown file')
+        setWritingContent('# Error loading markdown file\n\n' + String(error))
       }
     }
 

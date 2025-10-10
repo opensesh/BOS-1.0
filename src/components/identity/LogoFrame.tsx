@@ -244,18 +244,19 @@ const LogoFrame = forwardRef<LogoFrameHandle, LogoFrameProps>(({
     // Main logos: 85.5% (reduced by 5% from 90%)
     // Accessory logos: For outline/filled, use height-based sizing to match Core visual weight
     // Core is 176x88 (wide), outline/filled are 100x172 (tall)
-    
+
+    // Add overflow: hidden to contain glass effect foreignObject elements
     const responsiveSvg = svgContent.replace(
       /<svg([^>]*)>/,
-      `<svg$1 style="width: 100%; height: 100%; max-width: 100%; max-height: 100%;">`
+      `<svg$1 style="width: 100%; height: 100%; max-width: 100%; max-height: 100%; overflow: visible;">`
     )
 
     // For outline and filled logos, use height-based constraint to maintain aspect ratio
     if (logoType === 'filled' || logoType === 'outline') {
       return (
-        <div className="w-full h-full flex items-center justify-center">
+        <div className="w-full h-full flex items-center justify-center overflow-hidden">
           <div
-            className="flex items-center justify-center"
+            className="flex items-center justify-center overflow-hidden"
             style={{ height: '70%', width: 'auto' }}
             dangerouslySetInnerHTML={{ __html: responsiveSvg }}
           />
@@ -263,12 +264,12 @@ const LogoFrame = forwardRef<LogoFrameHandle, LogoFrameProps>(({
       )
     }
 
-    // For all other logos (including core), use square sizing
+    // For all other logos (including core), use square sizing with overflow hidden to clip glass effects
     const sizeScale = '85.5%'
     return (
-      <div className="w-full h-full flex items-center justify-center">
+      <div className="w-full h-full flex items-center justify-center overflow-hidden">
         <div
-          className="flex items-center justify-center"
+          className="flex items-center justify-center overflow-hidden"
           style={{ width: sizeScale, height: sizeScale }}
           dangerouslySetInnerHTML={{ __html: responsiveSvg }}
         />
