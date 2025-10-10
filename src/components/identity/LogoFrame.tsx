@@ -288,7 +288,7 @@ const LogoFrame = forwardRef<LogoFrameHandle, LogoFrameProps>(({
 
       {/* Header */}
       <div className="bg-brand-vanilla box-border flex items-center justify-between overflow-visible p-3 relative rounded-tl-3xl rounded-tr-3xl shrink-0 w-full z-[15]">
-        <h3 className="font-display text-h4-mobile tracking-[-0.25px] text-brand-charcoal leading-[1.2]">
+        <h3 className="font-display text-h4-mobile md:text-h4-tablet xl:text-h4-desktop text-brand-charcoal leading-[1.2]">
           {title}
         </h3>
 

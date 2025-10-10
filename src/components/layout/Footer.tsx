@@ -66,7 +66,7 @@ export default function Footer() {
 
           {/* Tagline and Copyright */}
           <div className="flex flex-wrap gap-[19px] items-center px-3">
-            <p className="font-accent text-[20px] text-brand-vanilla leading-[1.5]">
+            <p className="font-accent text-b1 text-brand-vanilla">
               Brand, Design, Create
             </p>
             <p className="font-text text-caption text-brand-vanilla">
@@ -88,7 +88,7 @@ export default function Footer() {
 
           {/* Social Links */}
           <div className="flex flex-col gap-3">
-            <p className="font-accent text-[18px] text-brand-vanilla leading-[1.5]">Social Links</p>
+            <p className="font-accent text-b2 text-brand-vanilla">Social Links</p>
             <div className="flex flex-wrap gap-2">
               {[
                 { Icon: OpenSessionIcon, label: 'Website', url: 'https://opensession.co/' },

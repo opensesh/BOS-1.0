@@ -208,7 +208,7 @@ export default function IdentitySection({ defaultOpen = false, lazyLoad = false 
                           </motion.button>
                         </div>
                         <div className={`${color.labelBg} px-3 py-1.5 rounded-full`}>
-                          <p className={`font-text text-[12px] font-bold leading-[1.25] ${color.labelText}`}>
+                          <p className={`font-text text-label font-bold ${color.labelText}`}>
                             {color.label}
                           </p>
                         </div>
@@ -219,7 +219,7 @@ export default function IdentitySection({ defaultOpen = false, lazyLoad = false 
                           { label: color.rgb }
                         ].map((item, idx) => (
                           <div key={idx} className="flex gap-2 items-center">
-                            <p className={`font-text text-[12px] font-bold leading-[1.25] ${color.textColor}`}>
+                            <p className={`font-text text-label font-bold ${color.textColor}`}>
                               {item.label}
                             </p>
                             <motion.button
@@ -281,7 +281,7 @@ export default function IdentitySection({ defaultOpen = false, lazyLoad = false 
                           { label: color.rgb }
                         ].map((item, idx) => (
                           <div key={idx} className="flex gap-2 items-center">
-                            <p className={`font-text text-[12px] font-bold leading-[1.25] ${color.textColor}`}>
+                            <p className={`font-text text-label font-bold ${color.textColor}`}>
                               {item.label}
                             </p>
                             <motion.button

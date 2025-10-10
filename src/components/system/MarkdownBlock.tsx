@@ -247,14 +247,14 @@ export default function MarkdownBlock() {
         {/* Content - Scrollable */}
         <div className="bg-brand-charcoal flex gap-2.5 max-h-[400px] overflow-y-auto">
           {/* Line numbers */}
-          <div className="font-mono text-[14.5px] text-brand-vanilla/20 text-right leading-[28px] select-none py-2 pl-1.5 pr-2.5 sticky left-0 bg-brand-charcoal">
+          <div className="font-mono text-caption text-brand-vanilla/20 text-right leading-[28px] select-none py-2 pl-1.5 pr-2.5 sticky left-0 bg-brand-charcoal">
             {lines.map((_, i) => (
               <div key={i}>{i + 1}</div>
             ))}
           </div>
 
           {/* Code content */}
-          <pre className="font-mono text-[15px] leading-[28px] flex-1 min-w-0 py-2 pr-4">
+          <pre className="font-mono text-b2 leading-[28px] flex-1 min-w-0 py-2 pr-4">
             {lines.map((line, i) => (
               <div key={i} className="whitespace-pre">
                 {highlightMarkdown(line) || ' '}
@@ -270,7 +270,7 @@ export default function MarkdownBlock() {
     <div id="markdown" className="flex flex-col gap-12 py-12">
       {/* Title */}
       <div className="flex flex-col gap-8">
-        <h2 className="font-display text-d2-mobile md:text-d2-tablet xl:text-d2-desktop tracking-[-2px] text-brand-vanilla">
+        <h2 className="font-display text-d2-mobile md:text-d2-tablet xl:text-d2-desktop text-brand-vanilla">
           Markdown
         </h2>
         <p className="font-text text-b1 text-brand-vanilla/70 max-w-3xl">
@@ -292,7 +292,7 @@ export default function MarkdownBlock() {
             <button
               key={file.name}
               onClick={() => setSelectedGuideline(file)}
-              className={`px-3 py-2 rounded-full font-text text-[14px] transition-all duration-200 ${
+              className={`px-3 py-2 rounded-full font-text text-button transition-all duration-200 ${
                 selectedGuideline.name === file.name
                   ? 'bg-brand-aperol text-brand-vanilla shadow-lg shadow-brand-aperol/20'
                   : 'bg-brand-vanilla/10 text-brand-vanilla/70 hover:bg-brand-vanilla/20 hover:text-brand-vanilla'
@@ -326,7 +326,7 @@ export default function MarkdownBlock() {
             <button
               key={file.name}
               onClick={() => setSelectedWritingStyle(file)}
-              className={`px-3 py-2 rounded-full font-text text-[14px] transition-all duration-200 ${
+              className={`px-3 py-2 rounded-full font-text text-button transition-all duration-200 ${
                 selectedWritingStyle.name === file.name
                   ? 'bg-brand-aperol text-brand-vanilla shadow-lg shadow-brand-aperol/20'
                   : 'bg-brand-vanilla/10 text-brand-vanilla/70 hover:bg-brand-vanilla/20 hover:text-brand-vanilla'

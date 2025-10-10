@@ -33,7 +33,7 @@ export default function LogoBlock() {
     <div className="flex flex-col gap-12 py-12">
       {/* Section Title */}
       <div className="flex flex-col gap-8">
-        <h2 className="font-display text-d2-mobile md:text-d2-tablet tracking-[-2px] text-brand-vanilla">
+        <h2 className="font-display text-d2-mobile md:text-d2-tablet xl:text-d2-desktop text-brand-vanilla">
           Logo
         </h2>
       </div>
@@ -41,7 +41,7 @@ export default function LogoBlock() {
       {/* Main Section */}
       <div className="flex flex-col gap-6">
         <div className="flex items-start justify-between w-full">
-          <h3 className="font-display text-h4-mobile tracking-[-0.25px] text-brand-vanilla">
+          <h3 className="font-display text-h4-mobile md:text-h4-tablet xl:text-h4-desktop text-brand-vanilla">
             Main
           </h3>
           <button
@@ -84,7 +84,7 @@ export default function LogoBlock() {
       {/* Accessory Section */}
       <div className="flex flex-col gap-6">
         <div className="flex items-start justify-between w-full">
-          <h3 className="font-display text-h4-mobile tracking-[-0.25px] text-brand-vanilla">
+          <h3 className="font-display text-h4-mobile md:text-h4-tablet xl:text-h4-desktop text-brand-vanilla">
             Accessory
           </h3>
           <button

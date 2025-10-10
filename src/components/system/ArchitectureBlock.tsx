@@ -3,7 +3,7 @@ export default function ArchitectureBlock() {
     <div id="architecture" className="flex flex-col gap-12 py-12">
       {/* Title */}
       <div className="flex flex-col gap-8">
-        <h2 className="font-display text-d2-mobile md:text-d2-tablet xl:text-d2-desktop tracking-[-2px] text-brand-vanilla">
+        <h2 className="font-display text-d2-mobile md:text-d2-tablet xl:text-d2-desktop text-brand-vanilla">
           Architecture
         </h2>
         <p className="font-text text-b1 text-brand-vanilla/70 max-w-3xl">
