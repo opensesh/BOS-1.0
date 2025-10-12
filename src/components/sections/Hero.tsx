@@ -1,6 +1,5 @@
 import FaultyTerminal from "@components/ui/faulty-terminal"
 import { Typewriter } from "@components/ui/typewriter"
-import { ShaderAnimation } from "@components/ui/shader-animation"
 
 export default function Hero() {
   const handleScrollToSection = (sectionId: string) => {
@@ -44,14 +43,6 @@ export default function Hero() {
           pageLoadAnimation={true}
           brightness={1}
         />
-      </div>
-
-      {/* Shader Animation - Layer 2 (above terminal, below gradient) */}
-      <div
-        className="absolute inset-0 w-full h-full opacity-30"
-        style={{ zIndex: 2 }}
-      >
-        <ShaderAnimation />
       </div>
 
       {/* Centered Content Container - Visually centered accounting for header and mobile bottom nav */}
