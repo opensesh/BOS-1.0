@@ -11,17 +11,17 @@ interface MarkdownFile {
 const BASE_URL = import.meta.env.BASE_URL
 
 const BRAND_GUIDELINES: MarkdownFile[] = [
-  { name: 'brand-identity', path: `${BASE_URL}.claude/knowledge/core/OS_brand identity.md`, displayName: 'Brand Identity' },
-  { name: 'brand-messaging', path: `${BASE_URL}.claude/knowledge/core/OS_brand messaging.md`, displayName: 'Brand Messaging' },
-  { name: 'art-direction', path: `${BASE_URL}.claude/knowledge/core/OS_art direction.md`, displayName: 'Art Direction' },
+  { name: 'brand-identity', path: `${BASE_URL}claude-data/knowledge/core/OS_brand identity.md`, displayName: 'Brand Identity' },
+  { name: 'brand-messaging', path: `${BASE_URL}claude-data/knowledge/core/OS_brand messaging.md`, displayName: 'Brand Messaging' },
+  { name: 'art-direction', path: `${BASE_URL}claude-data/knowledge/core/OS_art direction.md`, displayName: 'Art Direction' },
 ]
 
 const WRITING_STYLES: MarkdownFile[] = [
-  { name: 'blog', path: `${BASE_URL}.claude/knowledge/writing-styles/blog.md`, displayName: 'Blog' },
-  { name: 'creative', path: `${BASE_URL}.claude/knowledge/writing-styles/creative.md`, displayName: 'Creative' },
-  { name: 'long-form', path: `${BASE_URL}.claude/knowledge/writing-styles/long-form.md`, displayName: 'Long Form' },
-  { name: 'short-form', path: `${BASE_URL}.claude/knowledge/writing-styles/short-form.md`, displayName: 'Short Form' },
-  { name: 'strategic', path: `${BASE_URL}.claude/knowledge/writing-styles/strategic.md`, displayName: 'Strategic' },
+  { name: 'blog', path: `${BASE_URL}claude-data/knowledge/writing-styles/blog.md`, displayName: 'Blog' },
+  { name: 'creative', path: `${BASE_URL}claude-data/knowledge/writing-styles/creative.md`, displayName: 'Creative' },
+  { name: 'long-form', path: `${BASE_URL}claude-data/knowledge/writing-styles/long-form.md`, displayName: 'Long Form' },
+  { name: 'short-form', path: `${BASE_URL}claude-data/knowledge/writing-styles/short-form.md`, displayName: 'Short Form' },
+  { name: 'strategic', path: `${BASE_URL}claude-data/knowledge/writing-styles/strategic.md`, displayName: 'Strategic' },
 ]
 
 export default function MarkdownBlock() {
