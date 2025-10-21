@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "tokens:sync": "tsx src/utils/tokenTransformer.ts",
     "deploy": "npm run build && gh-pages -d dist -t",
-    "ideas:generate": "node scripts/generate-weekly-ideas.js"
+    "ideas:generate": "node scripts/generate-weekly-ideas.js",
+    "news:generate": "node scripts/generate-news-updates.js"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",

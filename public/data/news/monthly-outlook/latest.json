@@ -1,0 +1,62 @@
+{
+  "type": "monthly-outlook",
+  "date": "2025-10-21T00:00:00.000Z",
+  "updates": [
+    {
+      "title": "Adobe MAX 2025 scheduled for November with major Firefly 3 and Creative Cloud AI integrations expected",
+      "timestamp": "10/21/2025, 10:00 AM",
+      "sources": [
+        {
+          "name": "Adobe Blog",
+          "url": "https://blog.adobe.com/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/"
+        }
+      ]
+    },
+    {
+      "title": "Anthropic Claude 4 rumored for December launch with enhanced vision and extended context capabilities",
+      "timestamp": "10/20/2025, 4:15 PM",
+      "sources": [
+        {
+          "name": "The Information",
+          "url": "https://www.theinformation.com/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/category/artificial-intelligence/"
+        }
+      ]
+    },
+    {
+      "title": "a16z predicts AI design tools will reach $50B market cap by end of 2026, signals major investment wave",
+      "timestamp": "10/19/2025, 1:30 PM",
+      "sources": [
+        {
+          "name": "a16z",
+          "url": "https://a16z.com/posts/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/"
+        }
+      ]
+    },
+    {
+      "title": "Meta planning major AI creator tools announcement at Connect conference, including AI video editing suite",
+      "timestamp": "10/18/2025, 9:45 AM",
+      "sources": [
+        {
+          "name": "Meta AI Blog",
+          "url": "https://ai.meta.com/blog/"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/"
+        }
+      ]
+    }
+  ]
+}

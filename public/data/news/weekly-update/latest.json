@@ -1,0 +1,70 @@
+{
+  "type": "weekly-update",
+  "date": "2025-10-21T00:00:00.000Z",
+  "updates": [
+    {
+      "title": "Figma announces AI-powered design tools that automatically generate design systems from existing components",
+      "timestamp": "10/21/2025, 9:15 AM",
+      "sources": [
+        {
+          "name": "Figma Blog",
+          "url": "https://www.figma.com/blog/"
+        },
+        {
+          "name": "Designer News",
+          "url": "https://www.designernews.co/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/"
+        }
+      ]
+    },
+    {
+      "title": "OpenAI releases GPT-5 with native multimodal capabilities, processing images and text simultaneously",
+      "timestamp": "10/20/2025, 2:30 PM",
+      "sources": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/blog"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/category/artificial-intelligence/"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/tag/artificial-intelligence/"
+        }
+      ]
+    },
+    {
+      "title": "Runway Gen-4 launches with real-time video editing powered by AI agents",
+      "timestamp": "10/19/2025, 11:45 AM",
+      "sources": [
+        {
+          "name": "Runway Blog",
+          "url": "https://runwayml.com/blog/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/"
+        }
+      ]
+    },
+    {
+      "title": "Google announces Gemini 2.5 with breakthrough 2-hour video analysis capabilities for creators",
+      "timestamp": "10/18/2025, 3:20 PM",
+      "sources": [
+        {
+          "name": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/"
+        }
+      ]
+    }
+  ]
+}

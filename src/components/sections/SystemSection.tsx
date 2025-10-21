@@ -31,7 +31,7 @@ export default function SystemSection({ defaultOpen = false, lazyLoad = false }:
   }, [])
 
   return (
-    <div ref={ref} className="w-full max-w-[1184px] mx-auto px-6 md:px-12 py-20">
+    <div ref={ref} className="w-full max-w-[1184px] mx-auto px-6 md:px-12 pt-20 pb-40">
       <SectionDropdown
         title="System"
         number="03"

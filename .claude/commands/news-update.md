@@ -17,6 +17,7 @@
 3. Summarizes significant AI model releases, design tool updates, and industry shifts
 4. Highlights anything specifically relevant to OPEN SESSION's business (content creation, design tools, client opportunities)
 5. Provides actionable insights and recommendations
+6. Generates JSON data files for the News section on the website (Weekly Update & Monthly Outlook)
 
 **When to use:**
 - **Monday mornings** - Start the week informed
@@ -313,6 +314,63 @@ Research and summarize new tool's capabilities and OPEN SESSION fit
 
 ---
 
-**Last Updated:** October 10, 2025  
-**Command Status:** Active  
+## 🤖 Automated News Generation
+
+The `/news-update` command now generates JSON data files that populate the News section on your website.
+
+### How to Generate News Data
+
+Run the automated script:
+```bash
+node scripts/generate-news-updates.js
+```
+
+Or using the npm script (if configured):
+```bash
+npm run generate:news
+```
+
+This will:
+1. Fetch latest articles from RSS feeds
+2. Use Claude AI to analyze and summarize news
+3. Generate JSON files for:
+   - **Weekly Update** (`public/data/news/weekly-update/latest.json`)
+   - **Monthly Outlook** (`public/data/news/monthly-outlook/latest.json`)
+4. Create timestamped backups
+
+### News Data Structure
+
+```json
+{
+  "type": "weekly-update",
+  "date": "2025-10-21T00:00:00.000Z",
+  "updates": [
+    {
+      "title": "1-2 sentence summary of the news",
+      "timestamp": "MM/DD/YYYY, H:MM AM/PM",
+      "sources": [
+        { "name": "Source Name", "url": "https://..." }
+      ]
+    }
+  ]
+}
+```
+
+### Categories
+
+**Weekly Update:**
+- Focus on THIS WEEK's announcements and releases
+- Immediate developments designers need to know
+- Breaking news and product launches
+
+**Monthly Outlook:**
+- Upcoming events and conferences
+- Analyst predictions and forecasts
+- Future trends to watch
+- Strategic insights for planning
+
+---
+
+**Last Updated:** October 21, 2025
+**Command Status:** Active
 **Next Review:** November 2025
