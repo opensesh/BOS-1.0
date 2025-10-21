@@ -3,6 +3,7 @@ import { LoadingScreen } from '@components/ui/LoadingScreen'
 
 const Header = lazy(() => import('@components/layout/Header'))
 const Hero = lazy(() => import('@components/sections/Hero'))
+const IdeaGeneration = lazy(() => import('@components/sections/IdeaGeneration'))
 const MainResources = lazy(() => import('@components/sections/MainResources'))
 const CoreSection = lazy(() => import('@components/sections/CoreSection'))
 const IdentitySection = lazy(() => import('@components/sections/IdentitySection'))
@@ -54,20 +55,25 @@ export default function App() {
           </div>
           <div className={isLoading ? '' : 'stagger-item stagger-3'}>
             <Suspense fallback={fallback}>
+              <IdeaGeneration defaultOpen={false} />
+            </Suspense>
+          </div>
+          <div className={isLoading ? '' : 'stagger-item stagger-4'}>
+            <Suspense fallback={fallback}>
               <MainResources />
             </Suspense>
           </div>
-          <section id="core" className={isLoading ? '' : 'stagger-item stagger-4'}>
+          <section id="core" className={isLoading ? '' : 'stagger-item stagger-5'}>
             <Suspense fallback={fallback}>
               <CoreSection defaultOpen />
             </Suspense>
           </section>
-          <section id="identity" className={isLoading ? '' : 'stagger-item stagger-5'}>
+          <section id="identity" className={isLoading ? '' : 'stagger-item stagger-6'}>
             <Suspense fallback={fallback}>
               <IdentitySection defaultOpen={false} lazyLoad />
             </Suspense>
           </section>
-          <section id="system" className={isLoading ? '' : 'stagger-item stagger-6'}>
+          <section id="system" className={isLoading ? '' : 'stagger-item stagger-7'}>
             <Suspense fallback={fallback}>
               <SystemSection defaultOpen={false} lazyLoad />
             </Suspense>

@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "tokens:sync": "tsx src/utils/tokenTransformer.ts",
-    "deploy": "npm run build && gh-pages -d dist -t"
+    "deploy": "npm run build && gh-pages -d dist -t",
+    "ideas:generate": "node scripts/generate-weekly-ideas.js"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -26,6 +27,7 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.27.0",
     "@eslint/js": "^9.36.0",
     "@types/node": "^24.6.2",
     "@types/react": "^19.1.13",
@@ -45,6 +47,7 @@
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "react-router-dom": "^7.9.3",
+    "rss-parser": "^3.13.0",
     "tailwindcss": "^3.4.17",
     "tsx": "4.20.6",
     "typescript": "~5.8.3",
