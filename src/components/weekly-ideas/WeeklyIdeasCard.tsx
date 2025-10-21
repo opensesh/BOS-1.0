@@ -27,7 +27,7 @@ export default function WeeklyIdeasCard({ type, defaultOpen = false }: WeeklyIde
     // Load the latest ideas for this type
     async function loadIdeas() {
       try {
-        const response = await fetch(`/data/weekly-ideas/${type}/latest.json`)
+        const response = await fetch(`${import.meta.env.BASE_URL}data/weekly-ideas/${type}/latest.json`)
         if (response.ok) {
           const ideas = await response.json()
           setData(ideas)
