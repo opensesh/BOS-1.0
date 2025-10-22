@@ -95,7 +95,46 @@ What's your take on AI's role in your creative process?
 **Example:**
 Exploring fluid typography in motion. Part of our ongoing series on responsive brand systems.
 
-## Content Topics & Themes
+## Content Ideas Format
+
+### What Short-Form Ideas Should Be
+**NOT news summaries** - these are SPECIFIC POST IDEAS with clear formats:
+
+**Post Format Examples:**
+- "Create a carousel about how design systems are changing"
+- "Create an Instagram reel showing how Cursor works with Figma"
+- "Make a 3-slide comparison of AI tools for designers"
+- "Film a quick tutorial on using MCP with your design workflow"
+- "Create a visual breakdown of the spec-as-code philosophy"
+
+### Content Mix (Not Just Tools!)
+
+**1. Tools & Workflows (40%)**
+- Practical demonstrations
+- Tool comparisons
+- Integration tutorials
+- "How Cursor + Figma changes everything"
+
+**2. Frameworks & Concepts (30%)**
+- Design system philosophies
+- "Spec is the new code" explained visually
+- Atomic design for AI era
+- Component-driven thinking
+
+**3. Future & Abstract Ideas (30%)**
+- "What is the future of design?"
+- "Does everything live in the cloud?"
+- "When AI designs better than humans"
+- Provocative questions that spark discussion
+
+### Target Audience
+**Designers who want to:**
+- Understand what's possible with new tools
+- Stay ahead of trends
+- Learn practical techniques quickly
+- See frameworks in action
+
+### Content Topics & Themes
 
 ### Core Focus Areas
 1. **Design Systems** - Making modular design accessible

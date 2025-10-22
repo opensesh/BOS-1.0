@@ -118,22 +118,12 @@ async function fetchRSSArticles() {
 }
 
 /**
- * Generate ideas for a specific content type using Claude
+ * Generate format-specific prompts based on content type
  */
-async function generateIdeas(contentType, knowledge, newsSources, hotnessConfig, rssArticles) {
-  console.log(`\n🤖 Generating ${contentType} ideas...`)
-
-  // Format RSS articles for the prompt
-  const articlesText = rssArticles.map(article =>
-    `- "${article.title}" - ${article.source}\n  URL: ${article.url}`
-  ).join('\n')
-
-  const prompt = `You are an AI content strategist for OPEN SESSION, a design agency specializing in AI-powered creative workflows.
+function getPromptForContentType(contentType, knowledge, articlesText) {
+  const commonContext = `You are an AI content strategist for OPEN SESSION, a design agency specializing in AI-powered creative workflows.
 
 Today's date: ${new Date().toISOString().split('T')[0]}
-
-**Your Task:**
-Generate 3-5 content ideas for ${contentType} content based on the latest AI/design news articles below.
 
 **Context - Brand Identity:**
 ${knowledge['core/OS_brand identity.md']}
@@ -144,34 +134,47 @@ ${knowledge['core/OS_brand messaging.md']}
 **Context - Writing Style for ${contentType}:**
 ${knowledge[`writing-styles/${contentType}.md`]}
 
-**Context - Hotness Scoring System:**
-${JSON.stringify(hotnessConfig, null, 2)}
-
-**LATEST ARTICLES FROM RSS FEEDS (Use these URLs):**
+**LATEST ARTICLES FROM RSS FEEDS (Use these URLs as inspiration):**
 ${articlesText}
+`
 
-**Instructions:**
-1. Review the articles above and identify 3-5 content ideas that would resonate with OPEN SESSION's audience (UX designers, creative directors, developers)
-2. For EACH content idea, you MUST provide:
-   - A compelling title (max 60 characters)
-   - A brief description (max 120 characters)
-   - Whether it should be "starred" (mark the top 1-2 most timely/valuable ideas as starred: true)
-   - **3-5 SOURCE URLs** - Pick URLs from the articles above that are MOST RELEVANT to this specific idea
+  if (contentType === 'short-form') {
+    return `${commonContext}
 
-**CRITICAL RULES:**
-- Use ONLY URLs from the articles list above
-- Each idea should have 3-5 URLs that directly relate to that specific topic
-- Pick the most relevant articles for each idea - match the topic!
-- DO NOT create or modify URLs - copy them exactly from the list above
+**Your Task:**
+Generate 4-5 SPECIFIC POST IDEAS for Instagram/TikTok based on the latest AI/design news.
 
-**Response Format (JSON only, no markdown):**
+**CRITICAL: These should be ACTIONABLE POST IDEAS, NOT news summaries!**
+
+**Format Examples (this is what we want):**
+✓ "Create a carousel showing how design systems are evolving with AI"
+✓ "Film an Instagram reel demonstrating Cursor + Figma workflow"
+✓ "Make a 3-slide comparison of AI tools for designers"
+✓ "Create a visual breakdown of 'spec is the new code' philosophy"
+✗ "AI tools are changing design" (too vague, not actionable)
+✗ "New Claude update released" (news summary, not a post idea)
+
+**Content Mix Requirements:**
+- 40% Tools & Workflows (practical demonstrations)
+- 30% Frameworks & Concepts (design philosophies)
+- 30% Future & Abstract (provocative questions)
+
+**For EACH post idea provide:**
+- Title: The specific post format (e.g., "Carousel: How design systems are changing")
+- Description: What the post will show/teach (max 120 chars)
+- Starred: Mark 1-2 most timely ideas as true
+- Sources: 3-5 source OBJECTS (not just URLs!) from articles above - these help inspire the idea and give places to learn more
+
+**CRITICAL: Sources must be objects with "name" and "url" properties!**
+
+**Response Format (JSON only):**
 {
-  "type": "${contentType}",
+  "type": "short-form",
   "date": "${new Date().toISOString()}",
   "ideas": [
     {
-      "title": "Claude's Computer Use Demo",
-      "description": "Show AI controlling Figma directly - the future of design automation",
+      "title": "Reel: Cursor + Figma live demo",
+      "description": "30-second tutorial showing how to integrate Cursor with Figma for faster design",
       "starred": true,
       "sources": [
         { "name": "TechCrunch AI", "url": "https://techcrunch.com/..." },
@@ -182,7 +185,133 @@ ${articlesText}
   ]
 }
 
-Generate ideas now. Return ONLY valid JSON, no other text.`
+Generate 4-5 specific, actionable post ideas now. Return ONLY valid JSON.`
+  }
+
+  if (contentType === 'long-form') {
+    return `${commonContext}
+
+**Your Task:**
+Generate 4-5 INSTRUCTIONAL VIDEO IDEAS for YouTube (5-10 minute tutorials) based on the latest AI/design news.
+
+**CRITICAL: These should be TUTORIAL TOPICS, NOT news summaries!**
+
+**Format Examples (this is what we want):**
+✓ "Tutorial: Using Figma with OpenAI's browser use feature for automated design"
+✓ "MCP Deep Dive: How we integrate it across our entire design workflow"
+✓ "Step-by-step: Building a component library with Claude Code"
+✓ "Cursor + Figma integration: Complete setup and workflow guide"
+✗ "AI is changing design" (too vague, not a tutorial)
+✗ "New tool released" (news announcement, not instructional)
+
+**Video Types Requirements:**
+- 40% Tool Integration Tutorials (how to connect tools)
+- 30% Deep Dives on New Features (hands-on exploration)
+- 20% Framework & Philosophy Explainers (concepts with examples)
+- 10% Our Business Use Cases (how we use tools)
+
+**Target Outcome:** Viewers should be able to DO, UNDERSTAND, or REPLICATE something after watching
+
+**For EACH video idea provide:**
+- Title: The tutorial topic (e.g., "Tutorial: Figma to Production with AI")
+- Description: What viewers will learn/be able to do (max 120 chars)
+- Starred: Mark 1-2 most timely/valuable tutorials as true
+- Sources: 3-5 source OBJECTS (not just URLs!) from articles above - these help with research and give viewers places to learn more
+
+**CRITICAL: Sources must be objects with "name" and "url" properties!**
+
+**Response Format (JSON only):**
+{
+  "type": "long-form",
+  "date": "${new Date().toISOString()}",
+  "ideas": [
+    {
+      "title": "Tutorial: MCP + Figma integration guide",
+      "description": "Step-by-step setup showing exactly how we use MCP with Figma at OPEN SESSION",
+      "starred": true,
+      "sources": [
+        { "name": "TechCrunch AI", "url": "https://techcrunch.com/..." },
+        { "name": "The Verge", "url": "https://www.theverge.com/..." },
+        { "name": "Wired", "url": "https://www.wired.com/..." }
+      ]
+    }
+  ]
+}
+
+Generate 4-5 specific instructional video ideas now. Return ONLY valid JSON.`
+  }
+
+  if (contentType === 'blog') {
+    return `${commonContext}
+
+**Your Task:**
+Generate 3-5 THOUGHT LEADERSHIP ARTICLE IDEAS based on the latest AI/design news.
+
+**CRITICAL: These should be PERSPECTIVE PIECES with editorial depth, NOT tutorials or news summaries!**
+
+**Format Examples (this is what we want):**
+✓ "Our perspective: Why 'spec is the new code' will reshape design education"
+✓ "The realistic AI toolkit for designers in 2025: What actually works vs. hype"
+✓ "Where design is heading: Three trends that matter more than the latest tools"
+✓ "Why most designers are approaching AI wrong (and how to fix it)"
+✗ "How to use Figma" (tutorial, belongs in long-form)
+✗ "New AI tool released" (news, not perspective)
+
+**Article Types Requirements:**
+- 30% Future Perspectives (where design is heading)
+- 30% Tool & Framework Analysis (what's realistic to adopt)
+- 25% Philosophy & Frameworks (why approaches matter)
+- 15% Case Studies & Our Approach (how we solved challenges)
+
+**Key Differentiators:**
+- Short-form = Quick post idea → Blog = Why it matters (analysis)
+- Long-form = How to do it (tutorial) → Blog = Should you do it? (perspective)
+
+**For EACH article idea provide:**
+- Title: The perspective/analysis angle (e.g., "Our take: Why spec is the new code")
+- Description: The argument or perspective (max 120 chars)
+- Starred: Mark 1-2 most compelling perspectives as true
+- Sources: 3-5 source OBJECTS (not just URLs!) from articles above - these help with research and give readers places to learn more
+
+**CRITICAL: Sources must be objects with "name" and "url" properties!**
+
+**Response Format (JSON only):**
+{
+  "type": "blog",
+  "date": "${new Date().toISOString()}",
+  "ideas": [
+    {
+      "title": "Why 'spec is the new code' matters for designers",
+      "description": "Deep dive on how this philosophy will reshape design education and practice",
+      "starred": true,
+      "sources": [
+        { "name": "TechCrunch AI", "url": "https://techcrunch.com/..." },
+        { "name": "The Verge", "url": "https://www.theverge.com/..." },
+        { "name": "Wired", "url": "https://www.wired.com/..." }
+      ]
+    }
+  ]
+}
+
+Generate 3-5 thought leadership article ideas now. Return ONLY valid JSON.`
+  }
+
+  // Fallback (shouldn't reach here)
+  return `${commonContext}\n\nGenerate 3-5 content ideas for ${contentType}.`
+}
+
+/**
+ * Generate ideas for a specific content type using Claude
+ */
+async function generateIdeas(contentType, knowledge, newsSources, hotnessConfig, rssArticles) {
+  console.log(`\n🤖 Generating ${contentType} ideas...`)
+
+  // Format RSS articles for the prompt
+  const articlesText = rssArticles.map(article =>
+    `- "${article.title}" - ${article.source}\n  URL: ${article.url}`
+  ).join('\n')
+
+  const prompt = getPromptForContentType(contentType, knowledge, articlesText)
 
   try {
     const message = await anthropic.messages.create({

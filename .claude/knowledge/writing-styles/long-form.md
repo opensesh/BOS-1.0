@@ -14,6 +14,49 @@ We are **relatable, cool, creative, and intelligent** facilitators. We balance c
 ### Language Level
 Content should be understandable by anyone with a high school education, but scalable to expert audiences. We avoid unnecessary jargon while not dumbing down concepts. Technical terms are fine when explained clearly.
 
+## Content Ideas Format for Long-Form
+
+### What Long-Form Video Ideas Should Be
+**INSTRUCTIONAL YOUTUBE VIDEOS (5-10 min deep dives)** - These are NOT summaries, they're specific tutorial/educational video topics:
+
+**Video Idea Examples:**
+- "How to use Figma with OpenAI's new browser use feature to supercharge your design workflow"
+- "MCP tutorial: How we use it across all our tools (with real examples from our business)"
+- "Step-by-step: Building a design system with Claude Code in under 10 minutes"
+- "Cursor + Figma integration: Complete workflow tutorial for designers"
+- "From Figma to production: Using AI agents to bridge the gap"
+
+### Video Types & Focus
+
+**1. Tool Integration Tutorials (40%)**
+- How to connect tools together
+- Real workflow demonstrations
+- "Here's exactly how we do it" videos
+- Practical, follow-along content
+
+**2. Deep Dives on New Features (30%)**
+- "What you need to know about [new tool/feature]"
+- Breaking down complex releases
+- Hands-on exploration with commentary
+- Test results and impressions
+
+**3. Framework & Philosophy Explainers (20%)**
+- "Why atomic design matters in the AI era"
+- "Understanding design tokens at scale"
+- Conceptual breakdowns with visual examples
+
+**4. Our Business Use Cases (10%)**
+- "How we use MCP at OPEN SESSION"
+- "Our design system workflow from client to deployment"
+- Behind-the-scenes process videos
+
+### Target Outcome
+Every video idea should result in viewers being able to:
+- DO something new after watching
+- UNDERSTAND a complex concept
+- REPLICATE a workflow
+- SEE what's possible
+
 ## Content Structure Framework
 
 ### YouTube Script Format (Not Word-for-Word)
@@ -53,9 +96,9 @@ Scripts should be outline-based with key phrases, chapters, and timestamps. Vide
 ### Content Length Guidelines
 
 - **Quick Tips/Shorts**: 30-60 seconds
-- **Tutorial Videos**: 5-15 minutes  
+- **Tutorial Videos**: 5-15 minutes
 - **Thought Leadership**: 5-10 minutes
-- **YouTube Sweet Spot**: 6-12 minutes
+- **YouTube Sweet Spot**: 6-12 minutes (PRIMARY FOCUS)
 - **Future Course Modules**: 10-30+ minutes
 
 ## Hook Formulas

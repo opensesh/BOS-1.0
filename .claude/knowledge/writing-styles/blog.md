@@ -1,12 +1,55 @@
 # OPEN SESSION Blog Writing Style Guide
 
 ## Quick Reference
-**Company**: OPEN SESSION - Design agency by Karim Bouhdary & Morgan MacKean  
-**Voice**: Relatable, cool, creative, intelligent  
-**Tone**: Conversational-professional balance  
-**Reading Level**: High school (accessible to all)  
-**Pronouns**: Always "we" (never "I")  
-**Default Platform**: Ask if not specified  
+**Company**: OPEN SESSION - Design agency by Karim Bouhdary & Morgan MacKean
+**Voice**: Relatable, cool, creative, intelligent
+**Tone**: Conversational-professional balance
+**Reading Level**: High school (accessible to all)
+**Pronouns**: Always "we" (never "I")
+**Default Platform**: Ask if not specified
+
+## Content Ideas Format for Blog
+
+### What Blog Article Ideas Should Be
+**THOUGHT LEADERSHIP & PERSPECTIVE PIECES** - These connect to both short-form and long-form themes, but with editorial depth:
+
+**Article Idea Examples:**
+- "Our perspective: Why spec is the new code (and what that means for designers)"
+- "The realistic AI toolkit for designers in 2025: What actually works"
+- "Where we see design heading: Three trends that matter more than the hype"
+- "MCP changed how we work: A detailed look at our new workflow"
+- "Why most designers are using AI wrong (and how to fix it)"
+
+### Article Types & Focus
+
+**1. Future Perspectives (30%)**
+- "Where is design heading?"
+- Trend analysis with our take
+- Long-term implications of current tools
+- Provocative but grounded predictions
+
+**2. Tool & Framework Analysis (30%)**
+- "What's realistic for designers to adopt?"
+- Honest reviews and assessments
+- "Here's what we actually use daily"
+- Tool comparisons with nuance
+
+**3. Philosophy & Frameworks (25%)**
+- "Spec is the new code" deep dive
+- Design system philosophies explained
+- Why certain approaches matter
+- Connecting theory to practice
+
+**4. Case Studies & Our Approach (15%)**
+- How we solved specific challenges
+- Client transformation stories
+- Behind-the-scenes of our process
+- Lessons learned from real projects
+
+### Key Differentiators from Other Formats
+- **Short-form**: Quick post idea → **Blog**: Why it matters (analysis)
+- **Long-form**: How to do it (tutorial) → **Blog**: Should you do it? (perspective)
+- **Both**: Tactical execution → **Blog**: Strategic thinking
 
 ## Platform Strategy
 
