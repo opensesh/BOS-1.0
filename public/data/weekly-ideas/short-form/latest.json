@@ -1,38 +1,19 @@
 {
   "type": "short-form",
-  "date": "2025-10-23T18:52:23.822Z",
+  "date": "2025-10-23T18:58:22.566Z",
   "ideas": [
     {
-      "title": "Carousel: AI memory vs. design systems memory",
-      "description": "3 slides comparing how Claude's new memory feature mirrors component libraries in design",
+      "title": "Reel: Microsoft Mico vs Clippy evolution",
+      "description": "30-second visual comparison showing how AI assistants evolved from Clippy to modern design helpers",
       "starred": true,
       "sources": [
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/news/804124/anthropic-claude-ai-memory-upgrade-all-subscribers"
-        },
         {
           "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
         },
-        {
-          "name": "Wired",
-          "url": "https://www.wired.com/story/google-earth-gemini-ai-chatbot/"
-        }
-      ]
-    },
-    {
-      "title": "Reel: Microsoft Mico vs. original Clippy evolution",
-      "description": "Split-screen showing 90s Clippy vs. 2025 AI assistant - what changed in interface design?",
-      "starred": true,
-      "sources": [
         {
           "name": "The Verge",
           "url": "https://www.theverge.com/news/804106/microsoft-mico-copilot-ai-assistant-clippy"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
         },
         {
           "name": "The Verge",
@@ -41,27 +22,46 @@
       ]
     },
     {
-      "title": "Static: The future of creative AI browsers",
-      "description": "Visual comparison of OpenAI Atlas vs. Microsoft's browser - what this means for designers",
-      "starred": false,
+      "title": "Carousel: Claude's memory feature for designers",
+      "description": "5 slides showing how AI memory transforms design workflows and project continuity",
+      "starred": true,
       "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804124/anthropic-claude-ai-memory-upgrade-all-subscribers"
+        },
         {
           "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/"
         },
         {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/23/sora-update-to-bring-ai-videos-of-your-pets-new-social-features-and-soon-an-android-version/"
-        },
-        {
           "name": "Wired",
-          "url": "https://www.wired.com/story/made-in-china-the-chinese-creator-who-imitates-ai-slop/"
+          "url": "https://www.wired.com/story/google-earth-gemini-ai-chatbot/"
         }
       ]
     },
     {
-      "title": "Carousel: When AI creates better content than humans",
-      "description": "5 slides exploring Sora's new features and what it means for creative professionals",
+      "title": "Story poll: Is everything moving to the cloud?",
+      "description": "Interactive story asking followers about cloud-first design tools vs local workflows",
+      "starred": false,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/tensormesh-raises-4-5m-to-squeeze-more-inference-out-of-ai-server-loads/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/palantir-enters-200m-partnership-with-telco-lumen-for-enterprise-ai-services/"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/google-earth-gemini-ai-chatbot/"
+        }
+      ]
+    },
+    {
+      "title": "Reel: AI video generation for design mockups",
+      "description": "Quick demo using Sora-style tools to create animated product presentations and brand videos",
       "starred": false,
       "sources": [
         {
@@ -79,21 +79,21 @@
       ]
     },
     {
-      "title": "Reel: AI shopping recommendations as design patterns",
-      "description": "Breaking down Amazon's AI recommendation UI - lessons for designing persuasive interfaces",
+      "title": "Carousel: When AI designs better than humans",
+      "description": "Provocative 4-slide exploration of AI creative capabilities vs human intuition in design",
       "starred": false,
       "sources": [
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/made-in-china-the-chinese-creator-who-imitates-ai-slop/"
+        },
         {
           "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/amazons-new-ai-shopping-tool-tells-you-why-you-should-buy-a-recommended-product/"
         },
         {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/23/cluelys-roy-lee-joins-techcrunch-disrupt-2025-to-show-how-rage-baiting-cuts-through-the-ai-noise/"
-        },
-        {
-          "name": "Wired",
-          "url": "https://www.wired.com/story/google-earth-gemini-ai-chatbot/"
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/805509/krafton-pubg-ai-first-developer-agentic-gpu-cluster"
         }
       ]
     }

@@ -1,16 +1,12 @@
 {
   "type": "long-form",
-  "date": "2025-10-23T18:52:39.277Z",
+  "date": "2025-10-23T18:58:37.137Z",
   "ideas": [
     {
-      "title": "Tutorial: Microsoft's Atlas browser automation for design workflows",
-      "description": "Complete setup guide showing how to automate repetitive design tasks using Microsoft's new AI browser",
+      "title": "Tutorial: Using Microsoft's Mico AI assistant for design workflow automation",
+      "description": "Complete setup guide showing how to integrate Mico into your daily design tasks and client communication",
       "starred": true,
       "sources": [
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/"
-        },
         {
           "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
@@ -18,48 +14,44 @@
         {
           "name": "The Verge",
           "url": "https://www.theverge.com/news/804106/microsoft-mico-copilot-ai-assistant-clippy"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804122/microsoft-copilot-real-talk-mode-group-chats-features"
         }
       ]
     },
     {
-      "title": "Step-by-step: Creating AI video mockups with Sora's new pet feature",
-      "description": "Hands-on tutorial using Sora's latest update to create engaging product demo videos for client presentations",
+      "title": "Deep Dive: Claude's new memory feature for design system documentation",
+      "description": "Hands-on exploration of how Claude's memory upgrade transforms design system management and client handoffs",
       "starred": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804124/anthropic-claude-ai-memory-upgrade-all-subscribers"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/"
+        }
+      ]
+    },
+    {
+      "title": "Tutorial: Sora video generation for design presentations and client pitches",
+      "description": "Step-by-step guide to creating compelling brand videos using Sora's new features for design agencies",
+      "starred": false,
       "sources": [
         {
           "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/sora-update-to-bring-ai-videos-of-your-pets-new-social-features-and-soon-an-android-version/"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/23/openai-backed-wonder-studios-raised-12m-to-bring-ai-content-to-hollywood/"
         }
       ]
     },
     {
-      "title": "Deep dive: Claude's memory feature for consistent design systems",
-      "description": "How to leverage Anthropic's new memory upgrade to maintain brand consistency across all design projects",
+      "title": "Framework: Building AI-first design workflows like Krafton's development approach",
+      "description": "How to restructure your design agency to be 'AI-first' using proven enterprise strategies",
       "starred": false,
       "sources": [
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/news/804124/anthropic-claude-ai-memory-upgrade-all-subscribers/"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/23/tensormesh-raises-4-5m-to-squeeze-more-inference-out-of-ai-server-loads/"
-        }
-      ]
-    },
-    {
-      "title": "Framework: Building atomic design systems in the AI era",
-      "description": "Why traditional component libraries fail with AI tools and how to structure systems that scale with automation",
-      "starred": false,
-      "sources": [
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/23/palantir-enters-200m-partnership-with-telco-lumen-for-enterprise-ai-services/"
-        },
         {
           "name": "The Verge",
           "url": "https://www.theverge.com/news/805509/krafton-pubg-ai-first-developer-agentic-gpu-cluster"
@@ -71,13 +63,13 @@
       ]
     },
     {
-      "title": "Our workflow: How we use Copilot's group chat for client collaboration",
-      "description": "Behind-the-scenes look at integrating Microsoft's new Copilot features into our design review process",
+      "title": "Our Workflow: How we use Microsoft's AI browser for design research and inspiration",
+      "description": "Behind-the-scenes look at integrating AI browsers into our client discovery and mood board creation process",
       "starred": false,
       "sources": [
         {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/news/804122/microsoft-copilot-real-talk-mode-group-chats-features/"
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/"
         },
         {
           "name": "TechCrunch AI",

@@ -1,10 +1,10 @@
 {
   "type": "blog",
-  "date": "2025-10-23T18:52:53.592Z",
+  "date": "2025-10-23T18:58:50.711Z",
   "ideas": [
     {
-      "title": "Why the AI browser wars signal the death of traditional design handoffs",
-      "description": "Microsoft and OpenAI's browser race reveals how spec will replace static mockups in designer workflows",
+      "title": "Browser Wars 2.0: Why AI-powered browsers will reshape design workflows",
+      "description": "Analysis of how OpenAI Atlas and Microsoft's competing browser signal the end of traditional design-dev handoffs",
       "starred": true,
       "sources": [
         {
@@ -12,18 +12,18 @@
           "url": "https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/"
         },
         {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804106/microsoft-mico-copilot-ai-assistant-clippy"
         },
         {
           "name": "The Verge",
-          "url": "https://www.theverge.com/news/804106/microsoft-mico-copilot-ai-assistant-clippy"
+          "url": "https://www.theverge.com/news/804122/microsoft-copilot-real-talk-mode-group-chats-features"
         }
       ]
     },
     {
-      "title": "Our take: Why AI assistants like Mico will make or break design teams",
-      "description": "Microsoft's Clippy revival shows how contextual AI will either empower designers or create new dependencies",
+      "title": "The AI assistant paradox: Why Clippy 2.0 might actually work this time",
+      "description": "Microsoft's Mico represents a fundamental shift in how AI assistants integrate with creative workflows",
       "starred": false,
       "sources": [
         {
@@ -41,8 +41,8 @@
       ]
     },
     {
-      "title": "The realistic designer's guide to AI memory: What Claude's upgrade actually means",
-      "description": "Beyond the hype: How persistent AI memory will change design workflows and what designers should prepare for",
+      "title": "Memory vs. context: Why Claude's upgrade signals the end of prompt engineering",
+      "description": "Anthropic's memory feature represents a paradigm shift from one-shot prompts to persistent AI relationships",
       "starred": true,
       "sources": [
         {
@@ -51,17 +51,17 @@
         },
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
+          "url": "https://techcrunch.com/2025/10/23/tensormesh-raises-4-5m-to-squeeze-more-inference-out-of-ai-server-loads/"
         },
         {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/news/804122/microsoft-copilot-real-talk-mode-group-chats-features"
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/palantir-enters-200m-partnership-with-telco-lumen-for-enterprise-ai-services/"
         }
       ]
     },
     {
-      "title": "Why Hollywood's AI adoption reveals the future of design systems at scale",
-      "description": "Wonder Studios' $12M raise shows how content industries will reshape creative workflows—lessons for designers",
+      "title": "From Hollywood to design systems: What Wonder Studios' $12M raise tells us about AI creativity",
+      "description": "Analysis of how AI content creation is moving from experimental to production-ready across industries",
       "starred": false,
       "sources": [
         {
@@ -79,8 +79,8 @@
       ]
     },
     {
-      "title": "The enterprise AI infrastructure gap designers need to understand now",
-      "description": "Palantir's $200M partnership reveals how enterprise AI adoption will reshape design team requirements",
+      "title": "The infrastructure reality: Why most design teams aren't ready for AI-first workflows",
+      "description": "Enterprise partnerships like Palantir-Lumen reveal the gap between AI hype and implementation reality",
       "starred": false,
       "sources": [
         {
