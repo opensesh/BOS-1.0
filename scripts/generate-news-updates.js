@@ -122,7 +122,7 @@ ${articlesText}
 1. Review the articles above and identify 3-5 ${updateType} news items
 2. For EACH news update, you MUST provide:
    - A title (1-2 sentences that summarize the trend/announcement - be specific and informative)
-   - A timestamp in the format "MM/DD/YYYY, H:MM AM/PM" (use the article's pubDate)
+   - A timestamp in the format "MM/DD/YYYY, H:MM AM/PM" (MUST use the pubDate from the FIRST article you cite in sources - see critical formatting rules below)
    - 2-4 SOURCE URLs from the articles above that are directly relevant to this update
 
 **CRITICAL RULES:**
@@ -148,6 +148,12 @@ ${articlesText}
       ]
     }
   ]
+
+**CRITICAL TIMESTAMP FORMATTING:**
+- For each update's "timestamp" field, you MUST use the pubDate from the FIRST article you cite in that update's sources
+- Find the article in the provided articles array, get its pubDate, and convert it to the format "MM/DD/YYYY, H:MM AM/PM"
+- DO NOT use the current generation time - use the actual article's publication date
+- Example: If you cite an article from TechCrunch with pubDate "Mon, 21 Oct 2025 09:15:00 GMT", the timestamp should be "10/21/2025, 9:15 AM"
 }
 
 Generate news updates now. Return ONLY valid JSON, no other text.`

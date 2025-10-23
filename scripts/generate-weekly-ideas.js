@@ -163,9 +163,14 @@ Generate 4-5 SPECIFIC POST IDEAS for Instagram/TikTok based on the latest AI/des
 - Title: The specific post format (e.g., "Carousel: How design systems are changing")
 - Description: What the post will show/teach (max 120 chars)
 - Starred: Mark 1-2 most timely ideas as true
-- Sources: 3-5 source OBJECTS (not just URLs!) from articles above - these help inspire the idea and give places to learn more
+- Sources: 3-5 source OBJECTS from articles above - these help inspire the idea and give places to learn more
 
-**CRITICAL: Sources must be objects with "name" and "url" properties!**
+**CRITICAL SOURCE FORMATTING:**
+- Sources must be objects with "name" and "url" properties
+- For "name": Use ONLY the source name (TechCrunch AI, The Verge, Wired) - NOT the article title!
+- For "url": Use the full article URL
+- Example CORRECT: { "name": "TechCrunch AI", "url": "https://techcrunch.com/..." }
+- Example WRONG: { "name": "Anthropic's Claude chatbot is getting a 'memory' upgrade", "url": "..." }
 
 **Response Format (JSON only):**
 {
@@ -216,9 +221,14 @@ Generate 4-5 INSTRUCTIONAL VIDEO IDEAS for YouTube (5-10 minute tutorials) based
 - Title: The tutorial topic (e.g., "Tutorial: Figma to Production with AI")
 - Description: What viewers will learn/be able to do (max 120 chars)
 - Starred: Mark 1-2 most timely/valuable tutorials as true
-- Sources: 3-5 source OBJECTS (not just URLs!) from articles above - these help with research and give viewers places to learn more
+- Sources: 3-5 source OBJECTS from articles above - these help with research and give viewers places to learn more
 
-**CRITICAL: Sources must be objects with "name" and "url" properties!**
+**CRITICAL SOURCE FORMATTING:**
+- Sources must be objects with "name" and "url" properties
+- For "name": Use ONLY the source name (TechCrunch AI, The Verge, Wired) - NOT the article title!
+- For "url": Use the full article URL
+- Example CORRECT: { "name": "The Verge", "url": "https://www.theverge.com/..." }
+- Example WRONG: { "name": "Sora update to bring AI videos", "url": "..." }
 
 **Response Format (JSON only):**
 {
@@ -271,9 +281,14 @@ Generate 3-5 THOUGHT LEADERSHIP ARTICLE IDEAS based on the latest AI/design news
 - Title: The perspective/analysis angle (e.g., "Our take: Why spec is the new code")
 - Description: The argument or perspective (max 120 chars)
 - Starred: Mark 1-2 most compelling perspectives as true
-- Sources: 3-5 source OBJECTS (not just URLs!) from articles above - these help with research and give readers places to learn more
+- Sources: 3-5 source OBJECTS from articles above - these help with research and give readers places to learn more
 
-**CRITICAL: Sources must be objects with "name" and "url" properties!**
+**CRITICAL SOURCE FORMATTING:**
+- Sources must be objects with "name" and "url" properties
+- For "name": Use ONLY the source name (TechCrunch AI, The Verge, Wired) - NOT the article title!
+- For "url": Use the full article URL
+- Example CORRECT: { "name": "Wired", "url": "https://www.wired.com/..." }
+- Example WRONG: { "name": "Why browser wars 2.0 will reshape design", "url": "..." }
 
 **Response Format (JSON only):**
 {
