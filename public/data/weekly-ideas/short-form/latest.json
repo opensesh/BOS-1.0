@@ -1,87 +1,99 @@
 {
   "type": "short-form",
-  "date": "2025-10-23T18:12:02.280Z",
+  "date": "2025-10-23T18:52:23.822Z",
   "ideas": [
     {
-      "title": "Carousel: AI memory vs design systems memory",
-      "description": "3 slides comparing how Claude's new memory feature mirrors how design systems remember brand decisions",
+      "title": "Carousel: AI memory vs. design systems memory",
+      "description": "3 slides comparing how Claude's new memory feature mirrors component libraries in design",
       "starred": true,
       "sources": [
         {
-          "name": "Anthropic's Claude chatbot is getting a 'memory' upgrade",
+          "name": "The Verge",
           "url": "https://www.theverge.com/news/804124/anthropic-claude-ai-memory-upgrade-all-subscribers"
         },
         {
-          "name": "Microsoft's Mico is a 'Clippy' for the AI era",
+          "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
         },
         {
-          "name": "Meet Mico, Microsoft's AI version of Clippy",
-          "url": "https://www.theverge.com/news/804106/microsoft-mico-copilot-ai-assistant-clippy"
-        }
-      ]
-    },
-    {
-      "title": "Reel: Sora for design portfolios",
-      "description": "Quick demo showing how to use Sora's new features to create animated case study presentations",
-      "starred": true,
-      "sources": [
-        {
-          "name": "Sora update to bring AI videos of your pets, new social features, and soon, an Android version",
-          "url": "https://techcrunch.com/2025/10/23/sora-update-to-bring-ai-videos-of-your-pets-new-social-features-and-soon-an-android-version/"
-        },
-        {
-          "name": "Wonder Studios, backed by OpenAI, DeepMind execs, raised $12M to bring AI content to Hollywood",
-          "url": "https://techcrunch.com/2025/10/23/openai-backed-wonder-studios-raised-12m-to-bring-ai-content-to-hollywood/"
-        }
-      ]
-    },
-    {
-      "title": "Static: The death of design assistants?",
-      "description": "Provocative visual asking if Clippy's AI evolution means human design assistants are obsolete",
-      "starred": false,
-      "sources": [
-        {
-          "name": "Microsoft's Mico is a 'Clippy' for the AI era",
-          "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
-        },
-        {
-          "name": "Meet Mico, Microsoft's AI version of Clippy",
-          "url": "https://www.theverge.com/news/804106/microsoft-mico-copilot-ai-assistant-clippy"
-        },
-        {
-          "name": "Copilot is getting more personality with a 'real talk' mode and group chats",
-          "url": "https://www.theverge.com/news/804122/microsoft-copilot-real-talk-mode-group-chats-features"
-        }
-      ]
-    },
-    {
-      "title": "Carousel: AI browser wars for designers",
-      "description": "Side-by-side comparison of OpenAI's Atlas vs Microsoft's browser for creative workflows",
-      "starred": false,
-      "sources": [
-        {
-          "name": "Two days after OpenAI's Atlas, Microsoft launches a nearly identical AI browser",
-          "url": "https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/"
-        },
-        {
-          "name": "Google Earth Gets an AI Chatbot to Help Chart the Climate Crisis",
+          "name": "Wired",
           "url": "https://www.wired.com/story/google-earth-gemini-ai-chatbot/"
         }
       ]
     },
     {
-      "title": "Reel: Amazon's 'Help me decide' for design choices",
-      "description": "Satirical take showing how Amazon's AI shopping tool could work for design system component decisions",
+      "title": "Reel: Microsoft Mico vs. original Clippy evolution",
+      "description": "Split-screen showing 90s Clippy vs. 2025 AI assistant - what changed in interface design?",
+      "starred": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804106/microsoft-mico-copilot-ai-assistant-clippy"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804122/microsoft-copilot-real-talk-mode-group-chats-features"
+        }
+      ]
+    },
+    {
+      "title": "Static: The future of creative AI browsers",
+      "description": "Visual comparison of OpenAI Atlas vs. Microsoft's browser - what this means for designers",
       "starred": false,
       "sources": [
         {
-          "name": "Amazon's new AI shopping tool tells you why you should buy a recommended product",
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/sora-update-to-bring-ai-videos-of-your-pets-new-social-features-and-soon-an-android-version/"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/made-in-china-the-chinese-creator-who-imitates-ai-slop/"
+        }
+      ]
+    },
+    {
+      "title": "Carousel: When AI creates better content than humans",
+      "description": "5 slides exploring Sora's new features and what it means for creative professionals",
+      "starred": false,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/sora-update-to-bring-ai-videos-of-your-pets-new-social-features-and-soon-an-android-version/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/openai-backed-wonder-studios-raised-12m-to-bring-ai-content-to-hollywood/"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/made-in-china-the-chinese-creator-who-imitates-ai-slop/"
+        }
+      ]
+    },
+    {
+      "title": "Reel: AI shopping recommendations as design patterns",
+      "description": "Breaking down Amazon's AI recommendation UI - lessons for designing persuasive interfaces",
+      "starred": false,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/amazons-new-ai-shopping-tool-tells-you-why-you-should-buy-a-recommended-product/"
         },
         {
-          "name": "Amazon's latest attempt at selling stuff with AI is the 'Help me decide' button",
-          "url": "https://www.theverge.com/news/805348/amazon-ai-shopping-help-me-decide"
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/cluelys-roy-lee-joins-techcrunch-disrupt-2025-to-show-how-rage-baiting-cuts-through-the-ai-noise/"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/google-earth-gemini-ai-chatbot/"
         }
       ]
     }

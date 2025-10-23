@@ -1,99 +1,99 @@
 {
   "type": "blog",
-  "date": "2025-10-23T18:12:33.601Z",
+  "date": "2025-10-23T18:52:53.592Z",
   "ideas": [
     {
-      "title": "Why AI assistants are becoming the new design systems (and what that means for creativity)",
-      "description": "Microsoft's Mico and Anthropic's memory upgrades signal a shift from tools to creative partners",
+      "title": "Why the AI browser wars signal the death of traditional design handoffs",
+      "description": "Microsoft and OpenAI's browser race reveals how spec will replace static mockups in designer workflows",
       "starred": true,
       "sources": [
         {
-          "name": "Microsoft's Mico is a 'Clippy' for the AI era - TechCrunch",
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/"
+        },
+        {
+          "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
         },
         {
-          "name": "Anthropic's Claude chatbot is getting a 'memory' upgrade - The Verge",
-          "url": "https://www.theverge.com/news/804124/anthropic-claude-ai-memory-upgrade-all-subscribers"
-        },
-        {
-          "name": "Meet Mico, Microsoft's AI version of Clippy - The Verge",
+          "name": "The Verge",
           "url": "https://www.theverge.com/news/804106/microsoft-mico-copilot-ai-assistant-clippy"
         }
       ]
     },
     {
-      "title": "The realistic AI adoption framework for design teams: What actually works in 2025",
-      "description": "Beyond the hype cycle - which AI tools deserve your team's time and which are just noise",
-      "starred": true,
-      "sources": [
-        {
-          "name": "Wonder Studios, backed by OpenAI, DeepMind execs, raised $12M to bring AI content to Hollywood - TechCrunch",
-          "url": "https://techcrunch.com/2025/10/23/openai-backed-wonder-studios-raised-12m-to-bring-ai-content-to-hollywood/"
-        },
-        {
-          "name": "PUBG maker Krafton is turning into an 'AI first' developer - The Verge",
-          "url": "https://www.theverge.com/news/805509/krafton-pubg-ai-first-developer-agentic-gpu-cluster"
-        },
-        {
-          "name": "Sora update to bring AI videos of your pets, new social features, and soon, an Android version - TechCrunch",
-          "url": "https://techcrunch.com/2025/10/23/sora-update-to-bring-ai-videos-of-your-pets-new-social-features-and-soon-an-android-version/"
-        }
-      ]
-    },
-    {
-      "title": "Why browser wars 2.0 will reshape how designers work (OpenAI vs Microsoft edition)",
-      "description": "Atlas and Microsoft's response reveal the future of design workflows - and it's not what you think",
+      "title": "Our take: Why AI assistants like Mico will make or break design teams",
+      "description": "Microsoft's Clippy revival shows how contextual AI will either empower designers or create new dependencies",
       "starred": false,
       "sources": [
         {
-          "name": "Two days after OpenAI's Atlas, Microsoft launches a nearly identical AI browser - TechCrunch",
-          "url": "https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/"
-        },
-        {
-          "name": "Copilot is getting more personality with a 'real talk' mode and group chats - The Verge",
-          "url": "https://www.theverge.com/news/804122/microsoft-copilot-real-talk-mode-group-chats-features"
-        },
-        {
-          "name": "Amazon's new AI shopping tool tells you why you should buy a recommended product - TechCrunch",
-          "url": "https://techcrunch.com/2025/10/23/amazons-new-ai-shopping-tool-tells-you-why-you-should-buy-a-recommended-product/"
-        }
-      ]
-    },
-    {
-      "title": "Our take: Why enterprise AI partnerships signal the end of designer-as-gatekeeper",
-      "description": "Palantir-Lumen deal shows how AI democratizes design decisions - time to evolve or get left behind",
-      "starred": false,
-      "sources": [
-        {
-          "name": "Palantir enters $200M partnership with telco Lumen to offer enterprise AI services - TechCrunch",
-          "url": "https://techcrunch.com/2025/10/23/palantir-enters-200m-partnership-with-telco-lumen-for-enterprise-ai-services/"
-        },
-        {
-          "name": "Tensormesh raises $4.5M to squeeze more inference out of AI server loads - TechCrunch",
-          "url": "https://techcrunch.com/2025/10/23/tensormesh-raises-4-5m-to-squeeze-more-inference-out-of-ai-server-loads/"
-        },
-        {
-          "name": "Google Earth Gets an AI Chatbot to Help Chart the Climate Crisis - Wired",
-          "url": "https://www.wired.com/story/google-earth-gemini-ai-chatbot/"
-        }
-      ]
-    },
-    {
-      "title": "The memory revolution: How AI that remembers changes everything for design systems",
-      "description": "Claude's memory upgrade isn't just convenience - it's the foundation for truly adaptive design workflows",
-      "starred": false,
-      "sources": [
-        {
-          "name": "Anthropic's Claude chatbot is getting a 'memory' upgrade - The Verge",
-          "url": "https://www.theverge.com/news/804124/anthropic-claude-ai-memory-upgrade-all-subscribers"
-        },
-        {
-          "name": "Microsoft's Mico is a 'Clippy' for the AI era - TechCrunch",
+          "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
         },
         {
-          "name": "The Man Who Makes AI Slop by Hand - Wired",
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804106/microsoft-mico-copilot-ai-assistant-clippy"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804122/microsoft-copilot-real-talk-mode-group-chats-features"
+        }
+      ]
+    },
+    {
+      "title": "The realistic designer's guide to AI memory: What Claude's upgrade actually means",
+      "description": "Beyond the hype: How persistent AI memory will change design workflows and what designers should prepare for",
+      "starred": true,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804124/anthropic-claude-ai-memory-upgrade-all-subscribers"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804122/microsoft-copilot-real-talk-mode-group-chats-features"
+        }
+      ]
+    },
+    {
+      "title": "Why Hollywood's AI adoption reveals the future of design systems at scale",
+      "description": "Wonder Studios' $12M raise shows how content industries will reshape creative workflows—lessons for designers",
+      "starred": false,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/openai-backed-wonder-studios-raised-12m-to-bring-ai-content-to-hollywood/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/sora-update-to-bring-ai-videos-of-your-pets-new-social-features-and-soon-an-android-version/"
+        },
+        {
+          "name": "Wired",
           "url": "https://www.wired.com/story/made-in-china-the-chinese-creator-who-imitates-ai-slop/"
+        }
+      ]
+    },
+    {
+      "title": "The enterprise AI infrastructure gap designers need to understand now",
+      "description": "Palantir's $200M partnership reveals how enterprise AI adoption will reshape design team requirements",
+      "starred": false,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/palantir-enters-200m-partnership-with-telco-lumen-for-enterprise-ai-services/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/tensormesh-raises-4-5m-to-squeeze-more-inference-out-of-ai-server-loads/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/805509/krafton-pubg-ai-first-developer-agentic-gpu-cluster"
         }
       ]
     }

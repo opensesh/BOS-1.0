@@ -1,99 +1,87 @@
 {
   "type": "long-form",
-  "date": "2025-10-23T18:12:16.584Z",
+  "date": "2025-10-23T18:52:39.277Z",
   "ideas": [
     {
-      "title": "Tutorial: Building design systems with Claude's new memory feature",
-      "description": "How Claude's memory upgrade transforms component library creation and brand consistency workflows",
+      "title": "Tutorial: Microsoft's Atlas browser automation for design workflows",
+      "description": "Complete setup guide showing how to automate repetitive design tasks using Microsoft's new AI browser",
       "starred": true,
       "sources": [
         {
-          "name": "The Verge - Anthropic's Claude chatbot is getting a 'memory' upgrade",
-          "url": "https://www.theverge.com/news/804124/anthropic-claude-ai-memory-upgrade-all-subscribers"
-        },
-        {
-          "name": "TechCrunch AI - Microsoft's Mico is a 'Clippy' for the AI era",
-          "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
-        },
-        {
-          "name": "Wired - Google Earth Gets an AI Chatbot",
-          "url": "https://www.wired.com/story/google-earth-gemini-ai-chatbot/"
-        }
-      ]
-    },
-    {
-      "title": "Deep Dive: Microsoft's browser automation for design workflows",
-      "description": "Hands-on exploration of Microsoft's Atlas competitor and how it changes design automation",
-      "starred": true,
-      "sources": [
-        {
-          "name": "TechCrunch AI - Microsoft launches nearly identical AI browser",
+          "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/"
         },
         {
-          "name": "The Verge - Meet Mico, Microsoft's AI version of Clippy",
-          "url": "https://www.theverge.com/news/804106/microsoft-mico-copilot-ai-assistant-clippy"
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/microsofts-mico-is-a-clippy-for-the-ai-era/"
         },
         {
-          "name": "The Verge - Copilot real talk mode and group chats",
-          "url": "https://www.theverge.com/news/804122/microsoft-copilot-real-talk-mode-group-chats-features"
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804106/microsoft-mico-copilot-ai-assistant-clippy"
         }
       ]
     },
     {
-      "title": "Tutorial: Sora video generation for design presentations",
-      "description": "Step-by-step guide to creating client presentation videos using Sora's new features",
-      "starred": false,
+      "title": "Step-by-step: Creating AI video mockups with Sora's new pet feature",
+      "description": "Hands-on tutorial using Sora's latest update to create engaging product demo videos for client presentations",
+      "starred": true,
       "sources": [
         {
-          "name": "TechCrunch AI - Sora update with pet videos and social features",
+          "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/sora-update-to-bring-ai-videos-of-your-pets-new-social-features-and-soon-an-android-version/"
         },
         {
-          "name": "TechCrunch AI - Wonder Studios brings AI content to Hollywood",
+          "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/openai-backed-wonder-studios-raised-12m-to-bring-ai-content-to-hollywood/"
-        },
-        {
-          "name": "The Verge - Hollywood microdramas",
-          "url": "https://www.theverge.com/column/805250/hollywood-is-in-love-with-microdramas-for-all-the-wrong-reasons"
         }
       ]
     },
     {
-      "title": "Framework: AI-first design thinking for agencies",
-      "description": "How we restructured our entire creative process around AI tools like PUBG's Krafton approach",
+      "title": "Deep dive: Claude's memory feature for consistent design systems",
+      "description": "How to leverage Anthropic's new memory upgrade to maintain brand consistency across all design projects",
       "starred": false,
       "sources": [
         {
-          "name": "The Verge - PUBG maker Krafton turning AI first",
-          "url": "https://www.theverge.com/news/805509/krafton-pubg-ai-first-developer-agentic-gpu-cluster"
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804124/anthropic-claude-ai-memory-upgrade-all-subscribers/"
         },
         {
-          "name": "TechCrunch AI - Palantir partnership for enterprise AI",
-          "url": "https://techcrunch.com/2025/10/23/palantir-enters-200m-partnership-with-telco-lumen-for-enterprise-ai-services/"
-        },
-        {
-          "name": "TechCrunch AI - Tensormesh AI server optimization",
+          "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/tensormesh-raises-4-5m-to-squeeze-more-inference-out-of-ai-server-loads/"
         }
       ]
     },
     {
-      "title": "Our Business Use Case: Amazon's AI shopping integration for UX research",
-      "description": "How we use Amazon's new 'Help me decide' feature for understanding user decision patterns",
+      "title": "Framework: Building atomic design systems in the AI era",
+      "description": "Why traditional component libraries fail with AI tools and how to structure systems that scale with automation",
       "starred": false,
       "sources": [
         {
-          "name": "TechCrunch AI - Amazon's new AI shopping tool",
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/23/palantir-enters-200m-partnership-with-telco-lumen-for-enterprise-ai-services/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/805509/krafton-pubg-ai-first-developer-agentic-gpu-cluster"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/google-earth-gemini-ai-chatbot/"
+        }
+      ]
+    },
+    {
+      "title": "Our workflow: How we use Copilot's group chat for client collaboration",
+      "description": "Behind-the-scenes look at integrating Microsoft's new Copilot features into our design review process",
+      "starred": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/804122/microsoft-copilot-real-talk-mode-group-chats-features/"
+        },
+        {
+          "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/23/amazons-new-ai-shopping-tool-tells-you-why-you-should-buy-a-recommended-product/"
-        },
-        {
-          "name": "The Verge - Amazon AI shopping help me decide",
-          "url": "https://www.theverge.com/news/805348/amazon-ai-shopping-help-me-decide"
-        },
-        {
-          "name": "TechCrunch AI - Cluely's rage-baiting cuts through AI noise",
-          "url": "https://techcrunch.com/2025/10/23/cluelys-roy-lee-joins-techcrunch-disrupt-2025-to-show-how-rage-baiting-cuts-through-the-ai-noise/"
         }
       ]
     }
