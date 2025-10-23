@@ -372,7 +372,13 @@ async function main() {
   console.log('🚀 Starting Weekly Ideas Generator\n')
 
   if (!API_KEY) {
-    console.error('❌ ANTHROPIC_API_KEY environment variable is required')
+    console.error('❌ ERROR: ANTHROPIC_API_KEY environment variable is required')
+    console.error('\n📋 To fix this:')
+    console.error('   1. Get your API key from: https://console.anthropic.com/')
+    console.error('   2. For local use: export ANTHROPIC_API_KEY="sk-ant-api03-..."')
+    console.error('   3. For GitHub Actions: Add ANTHROPIC_API_KEY to repository secrets')
+    console.error('      GitHub repo → Settings → Secrets and variables → Actions → New repository secret')
+    console.error('\n⚠️  The workflow will continue to fail until this secret is added.\n')
     process.exit(1)
   }
 
