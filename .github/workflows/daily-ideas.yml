@@ -30,11 +30,16 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
+      - name: Generate news updates
+        run: npm run news:generate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: '🤖 Auto-generate weekly ideas [skip ci]'
-          file_pattern: 'public/data/weekly-ideas/**/*.json'
+          commit_message: '🤖 Auto-generate weekly ideas and news updates [skip ci]'
+          file_pattern: 'public/data/**/*.json'
           commit_user_name: 'github-actions[bot]'
           commit_user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
