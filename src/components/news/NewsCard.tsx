@@ -7,9 +7,10 @@ import type { NewsCollection } from '@/types/news'
 interface NewsCardProps {
   type: 'weekly-update' | 'monthly-outlook'
   defaultOpen?: boolean
+  selectedDate?: string | null
 }
 
-export default function NewsCard({ type, defaultOpen = false }: NewsCardProps) {
+export default function NewsCard({ type, defaultOpen = false, selectedDate = null }: NewsCardProps) {
   const [data, setData] = useState<NewsCollection | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [isOpen, setIsOpen] = useState(defaultOpen)
@@ -23,13 +24,24 @@ export default function NewsCard({ type, defaultOpen = false }: NewsCardProps) {
   const { icon: Icon, label } = typeConfig[type]
 
   useEffect(() => {
-    // Load the latest news for this type
+    // Load news for this type (either selected date or latest)
     async function loadNews() {
+      setIsLoading(true)
       try {
-        const response = await fetch(`${import.meta.env.BASE_URL}data/news/${type}/latest.json`)
+        const fileName = selectedDate ? `${selectedDate}.json` : 'latest.json'
+        const response = await fetch(`${import.meta.env.BASE_URL}data/news/${type}/${fileName}`)
         if (response.ok) {
           const news = await response.json()
           setData(news)
+        } else {
+          // If selected date doesn't exist, fallback to latest
+          if (selectedDate) {
+            const fallbackResponse = await fetch(`${import.meta.env.BASE_URL}data/news/${type}/latest.json`)
+            if (fallbackResponse.ok) {
+              const news = await fallbackResponse.json()
+              setData(news)
+            }
+          }
         }
       } catch (error) {
         console.error(`Failed to load ${type} news:`, error)
@@ -38,7 +50,7 @@ export default function NewsCard({ type, defaultOpen = false }: NewsCardProps) {
       }
     }
     loadNews()
-  }, [type])
+  }, [type, selectedDate])
 
   if (isLoading) {
     return (

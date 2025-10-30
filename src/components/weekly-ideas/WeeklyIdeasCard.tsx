@@ -7,9 +7,10 @@ import type { WeeklyIdeas } from '@/types/weekly-ideas'
 interface WeeklyIdeasCardProps {
   type: 'short-form' | 'long-form' | 'blog'
   defaultOpen?: boolean
+  selectedDate?: string | null
 }
 
-export default function WeeklyIdeasCard({ type, defaultOpen = false }: WeeklyIdeasCardProps) {
+export default function WeeklyIdeasCard({ type, defaultOpen = false, selectedDate = null }: WeeklyIdeasCardProps) {
   const [data, setData] = useState<WeeklyIdeas | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [isOpen, setIsOpen] = useState(defaultOpen)
@@ -24,13 +25,24 @@ export default function WeeklyIdeasCard({ type, defaultOpen = false }: WeeklyIde
   const { icon: Icon, label } = typeConfig[type]
 
   useEffect(() => {
-    // Load the latest ideas for this type
+    // Load ideas for this type (either selected date or latest)
     async function loadIdeas() {
+      setIsLoading(true)
       try {
-        const response = await fetch(`${import.meta.env.BASE_URL}data/weekly-ideas/${type}/latest.json`)
+        const fileName = selectedDate ? `${selectedDate}.json` : 'latest.json'
+        const response = await fetch(`${import.meta.env.BASE_URL}data/weekly-ideas/${type}/${fileName}`)
         if (response.ok) {
           const ideas = await response.json()
           setData(ideas)
+        } else {
+          // If selected date doesn't exist, fallback to latest
+          if (selectedDate) {
+            const fallbackResponse = await fetch(`${import.meta.env.BASE_URL}data/weekly-ideas/${type}/latest.json`)
+            if (fallbackResponse.ok) {
+              const ideas = await fallbackResponse.json()
+              setData(ideas)
+            }
+          }
         }
       } catch (error) {
         console.error(`Failed to load ${type} ideas:`, error)
@@ -39,7 +51,7 @@ export default function WeeklyIdeasCard({ type, defaultOpen = false }: WeeklyIde
       }
     }
     loadIdeas()
-  }, [type])
+  }, [type, selectedDate])
 
   if (isLoading) {
     return (
