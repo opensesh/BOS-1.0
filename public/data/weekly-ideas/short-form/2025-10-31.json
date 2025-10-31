@@ -1,10 +1,10 @@
 {
   "type": "short-form",
-  "date": "2025-10-31T07:21:47.735Z",
+  "date": "2025-10-31T07:24:52.799Z",
   "ideas": [
     {
-      "title": "Carousel: Figma's AI media revolution",
-      "description": "3-slide breakdown of how Figma's Weavy acquisition changes AI-powered content creation",
+      "title": "Carousel: Figma + Weavy AI media generation breakdown",
+      "description": "3-slide visual showing how Figma's new AI acquisition changes design workflows",
       "starred": true,
       "sources": [
         {
@@ -22,8 +22,8 @@
       ]
     },
     {
-      "title": "Reel: Agentic coding for designers",
-      "description": "30-second demo showing how AI agents can write design system code automatically",
+      "title": "Reel: Agentic coding for designers explained",
+      "description": "Quick visual demo of how AI agents write code from design specs",
       "starred": true,
       "sources": [
         {
@@ -36,13 +36,13 @@
         },
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/box-ceo-aaron-levie-on-how-ai-is-changing-the-enterprise-saas-landscape/"
+          "url": "https://techcrunch.com/2025/10/29/how-ai-labs-use-mercor-to-get-the-data-companies-wont-share/"
         }
       ]
     },
     {
-      "title": "Carousel: When AI audio gets commoditized",
-      "description": "Visual timeline of what happens to design when AI audio becomes free/cheap for everyone",
+      "title": "Carousel: When AI audio becomes commodity",
+      "description": "Visual timeline showing how design tools follow the same commoditization pattern",
       "starred": false,
       "sources": [
         {
@@ -50,8 +50,8 @@
           "url": "https://techcrunch.com/2025/10/29/elevenlabs-ceo-says-ai-audio-models-will-be-commoditized-over-time/"
         },
         {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/news/810735/tim-cook-ai-apple-intelligence-integrations"
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/29/box-ceo-aaron-levie-on-how-ai-is-changing-the-enterprise-saas-landscape/"
         },
         {
           "name": "Wired",
@@ -61,7 +61,7 @@
     },
     {
       "title": "Static: The $5 trillion design question",
-      "description": "Provocative question about what Nvidia's milestone means for creative professionals",
+      "description": "Provocative visual asking what Nvidia's valuation means for creative industries",
       "starred": false,
       "sources": [
         {
@@ -74,26 +74,26 @@
         },
         {
           "name": "The Verge",
-          "url": "https://www.theverge.com/news/810735/tim-cook-ai-apple-intelligence-integrations"
+          "url": "https://www.theverge.com/news/810735/tim-cook-ai-apple-intelligence-integrations/"
         }
       ]
     },
     {
-      "title": "Reel: Apple Intelligence ecosystem demo",
-      "description": "Quick walkthrough of how multiple AIs in Apple's ecosystem could change design workflows",
+      "title": "Reel: Enterprise SaaS meets design systems",
+      "description": "30-second breakdown of how AI is restructuring creative team workflows",
       "starred": false,
       "sources": [
         {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/news/810735/tim-cook-ai-apple-intelligence-integrations"
-        },
-        {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/30/google-partners-with-ambanis-reliance-to-offer-free-ai-pro-access-to-millions-of-jio-users-in-india/"
+          "url": "https://techcrunch.com/2025/10/29/box-ceo-aaron-levie-on-how-ai-is-changing-the-enterprise-saas-landscape/"
         },
         {
           "name": "The Verge",
           "url": "https://www.theverge.com/tech/809889/github-agent-hq-platform-play-microsoft-jared-palmer-jay-parikh"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/810735/tim-cook-ai-apple-intelligence-integrations/"
         }
       ]
     }

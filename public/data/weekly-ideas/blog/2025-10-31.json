@@ -1,10 +1,10 @@
 {
   "type": "blog",
-  "date": "2025-10-31T07:22:20.056Z",
+  "date": "2025-10-31T07:25:22.361Z",
   "ideas": [
     {
-      "title": "Why Figma's Weavy acquisition signals the death of traditional asset creation",
-      "description": "How AI-powered media generation will fundamentally reshape the designer-developer handoff",
+      "title": "Why Figma's Weavy acquisition signals the death of traditional asset libraries",
+      "description": "AI-generated media will reshape how designers think about brand consistency and creative ownership",
       "starred": true,
       "sources": [
         {
@@ -12,18 +12,18 @@
           "url": "https://techcrunch.com/2025/10/30/figma-acquires-ai-powered-media-generation-company-weavy/"
         },
         {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/solana-co-founder-anatoly-yakovenko-is-a-big-fan-of-agentic-coding/"
-        },
-        {
           "name": "The Verge",
           "url": "https://www.theverge.com/tech/809889/github-agent-hq-platform-play-microsoft-jared-palmer-jay-parikh"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/startup-edit-human-embryos-manhattan-genomics-cathy-tie/"
         }
       ]
     },
     {
-      "title": "The $5 trillion Nvidia milestone: What it really means for design tooling",
-      "description": "Why unprecedented AI compute power will democratize Fortune 500-level design capabilities",
+      "title": "The $5 trillion question: Why Nvidia's valuation should terrify design leaders",
+      "description": "What happens when AI infrastructure becomes more valuable than the creative industries it serves",
       "starred": true,
       "sources": [
         {
@@ -32,26 +32,7 @@
         },
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/box-ceo-aaron-levie-on-how-ai-is-changing-the-enterprise-saas-landscape/"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/30/nvidia-is-reportedly-investing-up-to-1-billion-in-poolside/"
-        }
-      ]
-    },
-    {
-      "title": "Our perspective: Why Microsoft's agent platform play will kill the design agency model",
-      "description": "How agentic workflows are reshaping creative services from consultation to execution",
-      "starred": false,
-      "sources": [
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/tech/809889/github-agent-hq-platform-play-microsoft-jared-palmer-jay-parikh"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/how-ai-labs-use-mercor-to-get-the-data-companies-wont-share/"
+          "url": "https://techcrunch.com/2025/10/29/elevenlabs-ceo-says-ai-audio-models-will-be-commoditized-over-time/"
         },
         {
           "name": "TechCrunch AI",
@@ -60,8 +41,8 @@
       ]
     },
     {
-      "title": "The commoditization paradox: Why AI audio models predict design's future",
-      "description": "ElevenLabs CEO's prediction reveals how design tools will evolve from premium to commodity",
+      "title": "Our perspective: Why 'commoditized' AI models are actually good news for designers",
+      "description": "ElevenLabs CEO's prediction reveals the real opportunity hiding in plain sight for creative professionals",
       "starred": false,
       "sources": [
         {
@@ -73,23 +54,42 @@
           "url": "https://techcrunch.com/2025/10/30/google-partners-with-ambanis-reliance-to-offer-free-ai-pro-access-to-millions-of-jio-users-in-india/"
         },
         {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/30/figma-acquires-ai-powered-media-generation-company-weavy/"
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/810735/tim-cook-ai-apple-intelligence-integrations"
         }
       ]
     },
     {
-      "title": "Where we see design systems heading: From static libraries to living organisms",
-      "description": "How agentic coding and AI integration will transform design systems into self-updating ecosystems",
+      "title": "The rage-bait strategy problem: Why design agencies are marketing themselves wrong",
+      "description": "What startup marketing tactics reveal about the broken relationship between designers and their audience",
       "starred": false,
       "sources": [
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/solana-co-founder-anatoly-yakovenko-is-a-big-fan-of-agentic-coding/"
+          "url": "https://techcrunch.com/2025/10/29/cluelys-roy-lee-on-the-ragebait-strategy-for-startup-marketing/"
         },
         {
           "name": "The Verge",
+          "url": "https://www.theverge.com/news/810319/youtube-like-button-animation-genre-user-interface-update"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/uncanny-valley-podcast-wired-roundup-ai-psychosis-ftc-files-google-bedbugs/"
+        }
+      ]
+    },
+    {
+      "title": "Where design systems are heading: From static libraries to agentic workflows",
+      "description": "Microsoft's agent platform and coding AI reveal the next evolution of how designers will actually work",
+      "starred": false,
+      "sources": [
+        {
+          "name": "The Verge",
           "url": "https://www.theverge.com/tech/809889/github-agent-hq-platform-play-microsoft-jared-palmer-jay-parikh"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/29/solana-co-founder-anatoly-yakovenko-is-a-big-fan-of-agentic-coding/"
         },
         {
           "name": "TechCrunch AI",

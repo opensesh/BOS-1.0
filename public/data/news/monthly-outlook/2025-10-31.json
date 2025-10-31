@@ -1,9 +1,9 @@
 {
   "type": "monthly-outlook",
-  "date": "2025-10-31T07:22:50.624Z",
+  "date": "2025-10-31T07:25:52.443Z",
   "updates": [
     {
-      "title": "Figma's acquisition of AI-powered media generation company Weavy signals major expansion into AI-generated content creation, with plans to integrate the technology across the entire Figma platform in coming months.",
+      "title": "Figma's acquisition of AI media generation company Weavy signals major push into AI-powered design workflows, with integration planned across the entire Figma platform in coming months.",
       "timestamp": "10/30/2025, 1:15 PM",
       "sources": [
         {
@@ -13,7 +13,7 @@
       ]
     },
     {
-      "title": "Nvidia's reported $1 billion investment in AI coding platform Poolside, following their record $5 trillion market cap milestone, indicates massive enterprise AI development tools expansion expected in Q4 2025.",
+      "title": "Nvidia's $1 billion investment in AI coding platform Poolside, following their record-breaking $5 trillion valuation, indicates massive enterprise AI development acceleration expected through November.",
       "timestamp": "10/30/2025, 9:10 PM",
       "sources": [
         {
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "title": "ElevenLabs CEO's prediction that AI audio models will become 'commoditized' suggests a wave of more affordable voice synthesis tools entering the market, potentially disrupting the current premium pricing model for creative professionals.",
+      "title": "ElevenLabs CEO predicts AI audio model commoditization within months, suggesting major pricing shifts and increased competition in voice synthesis tools for creators.",
       "timestamp": "10/29/2025, 4:59 PM",
       "sources": [
         {
@@ -37,17 +37,21 @@
       ]
     },
     {
-      "title": "Tim Cook's announcement that Apple Intelligence will integrate with more third-party AI tools indicates November-December rollout of expanded AI partnerships, potentially opening new opportunities for design and creative AI platforms.",
+      "title": "Apple Intelligence expansion accelerates as Tim Cook confirms plans to integrate multiple third-party AI tools into iOS, with Microsoft's agent platform strategy positioning for enterprise AI workflows.",
       "timestamp": "10/30/2025, 9:32 PM",
       "sources": [
         {
           "name": "The Verge",
           "url": "https://www.theverge.com/news/810735/tim-cook-ai-apple-intelligence-integrations"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/809889/github-agent-hq-platform-play-microsoft-jared-palmer-jay-parikh"
         }
       ]
     },
     {
-      "title": "Character.AI's decision to end chatbot experiences for minors following safety concerns signals broader industry shift toward stricter AI safety measures that may impact creative AI tools targeting younger demographics in November.",
+      "title": "Character.AI's decision to end chatbot experiences for minors reflects broader AI safety concerns that will likely drive new platform restrictions and compliance requirements across the industry.",
       "timestamp": "10/29/2025, 1:00 PM",
       "sources": [
         {

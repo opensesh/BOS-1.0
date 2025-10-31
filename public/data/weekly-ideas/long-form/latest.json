@@ -1,10 +1,10 @@
 {
   "type": "long-form",
-  "date": "2025-10-31T07:22:03.331Z",
+  "date": "2025-10-31T07:25:06.783Z",
   "ideas": [
     {
-      "title": "Tutorial: Figma + Weavy AI media generation workflow integration",
-      "description": "Complete setup guide for using AI-powered media generation directly in your Figma design process",
+      "title": "Tutorial: Figma + Weavy AI integration for automated media generation",
+      "description": "Complete workflow showing how to use Figma's new AI media tools for design system assets",
       "starred": true,
       "sources": [
         {
@@ -13,26 +13,26 @@
         },
         {
           "name": "The Verge",
-          "url": "https://www.theverge.com/news/810735/tim-cook-ai-apple-intelligence-integrations"
+          "url": "https://www.theverge.com/news/810319/youtube-like-button-animation-genre-user-interface-update"
         },
         {
           "name": "Wired",
-          "url": "https://www.wired.com/story/uncanny-valley-podcast-wired-roundup-ai-psychosis-ftc-files-google-bedbugs/"
+          "url": "https://www.wired.com/gallery/best-gaming-laptops/"
         }
       ]
     },
     {
-      "title": "Deep Dive: Building agentic design systems with modern coding tools",
-      "description": "Hands-on exploration of creating self-updating design components using AI-powered development workflows",
+      "title": "Deep Dive: GitHub Agent HQ - Building design systems with AI agents",
+      "description": "Hands-on exploration of Microsoft's new agent platform for automating component creation",
       "starred": true,
       "sources": [
         {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/solana-co-founder-anatoly-yakovenko-is-a-big-fan-of-agentic-coding/"
-        },
-        {
           "name": "The Verge",
           "url": "https://www.theverge.com/tech/809889/github-agent-hq-platform-play-microsoft-jared-palmer-jay-parikh"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/29/solana-co-founder-anatoly-yakovenko-is-a-big-fan-of-agentic-coding/"
         },
         {
           "name": "TechCrunch AI",
@@ -41,46 +41,8 @@
       ]
     },
     {
-      "title": "Framework: Enterprise SaaS design patterns for AI-first products",
-      "description": "Learn the design principles behind successful AI enterprise tools with real component examples",
-      "starred": false,
-      "sources": [
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/box-ceo-aaron-levie-on-how-ai-is-changing-the-enterprise-saas-landscape/"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/30/bevel-raises-10m-series-a-from-general-catalyst-for-its-ai-health-companion/"
-        },
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/news/810576/microsoft-windows-11-mixed-reality-link-meta-quest-3-vr"
-        }
-      ]
-    },
-    {
-      "title": "Tutorial: YouTube UI animations in Figma using new interaction features",
-      "description": "Recreate YouTube's new like button animations and apply the technique to your own interface designs",
-      "starred": false,
-      "sources": [
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/news/810319/youtube-like-button-animation-genre-user-interface-update"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/30/figma-acquires-ai-powered-media-generation-company-weavy/"
-        },
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/news/810314/vivo-x300-launch-finally-brings-originos-to-the-rest-of-the-world"
-        }
-      ]
-    },
-    {
-      "title": "Our Process: How we use AI audio tools in client brand presentations",
-      "description": "Behind-the-scenes workflow showing how we integrate voice synthesis into our design presentation process",
+      "title": "Framework: Atomic design systems in the age of AI commoditization",
+      "description": "Why component thinking matters more than ever as AI tools become commoditized",
       "starred": false,
       "sources": [
         {
@@ -89,7 +51,45 @@
         },
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/cluely-roy-lee-on-the-ragebait-strategy-for-startup-marketing/"
+          "url": "https://techcrunch.com/2025/10/29/box-ceo-aaron-levie-on-how-ai-is-changing-the-enterprise-saas-landscape/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/810735/tim-cook-ai-apple-intelligence-integrations"
+        }
+      ]
+    },
+    {
+      "title": "Tutorial: Apple Intelligence design patterns - Building for multi-AI interfaces",
+      "description": "Step-by-step guide to designing UI that works with multiple AI integrations",
+      "starred": false,
+      "sources": [
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/810735/tim-cook-ai-apple-intelligence-integrations"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/30/google-partners-with-ambanis-reliance-to-offer-free-ai-pro-access-to-millions-of-jio-users-in-india/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/810576/microsoft-windows-11-mixed-reality-link-meta-quest-3-vr"
+        }
+      ]
+    },
+    {
+      "title": "Business Case: How we use AI health monitoring for design team productivity",
+      "description": "Real workflow showing how we track and optimize our team's creative output using AI tools",
+      "starred": false,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/30/bevel-raises-10m-series-a-from-general-catalyst-for-its-ai-health-companion/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/29/how-ai-labs-use-mercor-to-get-the-data-companies-wont-share/"
         },
         {
           "name": "Wired",
