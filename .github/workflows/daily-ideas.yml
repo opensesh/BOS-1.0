@@ -4,6 +4,13 @@ on:
   schedule:
     # Run daily at 9 AM Pacific Time (5 PM UTC)
     - cron: '0 17 * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/daily-ideas.yml'
+      - 'scripts/**'
+      - 'package.json'
   workflow_dispatch: # Allow manual trigger
 
 jobs:

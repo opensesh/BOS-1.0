@@ -49,7 +49,7 @@ export default function DateSelector({
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
-      className="flex items-center gap-2"
+      className="flex sm:flex-row-reverse items-center gap-2"
     >
       {/* Date Selector Button */}
       <div className="relative">
@@ -103,7 +103,7 @@ export default function DateSelector({
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -8, scale: 0.95 }}
                 transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
-                className="absolute top-full right-0 mt-2 w-64 bg-brand-charcoal border border-brand-vanilla rounded shadow-xl z-50 overflow-hidden"
+                className="absolute top-full left-0 sm:right-0 sm:left-auto mt-2 w-64 bg-brand-charcoal border border-brand-vanilla rounded shadow-xl z-50 overflow-hidden"
               >
                 {/* Today Option */}
                 <button
