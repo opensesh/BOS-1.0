@@ -1,99 +1,87 @@
 {
   "type": "blog",
-  "date": "2025-10-31T07:25:22.361Z",
+  "date": "2025-10-31T17:18:28.256Z",
   "ideas": [
     {
-      "title": "Why Figma's Weavy acquisition signals the death of traditional asset libraries",
-      "description": "AI-generated media will reshape how designers think about brand consistency and creative ownership",
+      "title": "Why the AI bubble feels different this time (and what it means for designers)",
+      "description": "Analysis of why current AI investment patterns signal a permanent shift in creative work, not just hype",
       "starred": true,
       "sources": [
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/30/figma-acquires-ai-powered-media-generation-company-weavy/"
+          "url": "https://techcrunch.com/podcast/equity-live-from-300m-seed-rounds-to-data-center-builds-ai-is-feeling-bubbly/"
         },
         {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/tech/809889/github-agent-hq-platform-play-microsoft-jared-palmer-jay-parikh"
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/30/nvidia-is-reportedly-investing-up-to-1-billion-in-poolside/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/31/tim-cook-says-apple-is-open-to-ma-on-the-ai-front/"
+        }
+      ]
+    },
+    {
+      "title": "The licensing wars are reshaping creative AI (and designers need to pay attention)",
+      "description": "Why Perplexity's Getty deal signals a new era where content partnerships matter more than raw AI power",
+      "starred": true,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/31/perplexity-strikes-multi-year-licensing-deal-with-getty-images/"
         },
         {
           "name": "Wired",
-          "url": "https://www.wired.com/story/startup-edit-human-embryos-manhattan-genomics-cathy-tie/"
+          "url": "https://www.wired.com/story/guillermo-del-toro-hopes-hes-dead-before-ai-art-goes-mainstream/"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/republicans-claim-biden-censored-youtube/"
         }
       ]
     },
     {
-      "title": "The $5 trillion question: Why Nvidia's valuation should terrify design leaders",
-      "description": "What happens when AI infrastructure becomes more valuable than the creative industries it serves",
-      "starred": true,
-      "sources": [
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/nvidia-becomes-first-public-company-worth-5-trillion/"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/elevenlabs-ceo-says-ai-audio-models-will-be-commoditized-over-time/"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/box-ceo-aaron-levie-on-how-ai-is-changing-the-enterprise-saas-landscape/"
-        }
-      ]
-    },
-    {
-      "title": "Our perspective: Why 'commoditized' AI models are actually good news for designers",
-      "description": "ElevenLabs CEO's prediction reveals the real opportunity hiding in plain sight for creative professionals",
+      "title": "Why text-to-3D tools won't replace 3D artists (but will transform how we work)",
+      "description": "Realistic analysis of Adam's viral success and what it reveals about AI's actual role in 3D workflows",
       "starred": false,
       "sources": [
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/elevenlabs-ceo-says-ai-audio-models-will-be-commoditized-over-time/"
+          "url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/guillermo-del-toro-hopes-hes-dead-before-ai-art-goes-mainstream/"
+        }
+      ]
+    },
+    {
+      "title": "The chatbot traffic myth and what it means for design strategy",
+      "description": "Why Reddit's CEO is right about chatbots, and how this changes how we think about AI-driven user experiences",
+      "starred": false,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/10/31/reddit-ceo-says-chatbots-are-not-a-traffic-driver/"
         },
         {
           "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/10/30/google-partners-with-ambanis-reliance-to-offer-free-ai-pro-access-to-millions-of-jio-users-in-india/"
-        },
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/news/810735/tim-cook-ai-apple-intelligence-integrations"
         }
       ]
     },
     {
-      "title": "The rage-bait strategy problem: Why design agencies are marketing themselves wrong",
-      "description": "What startup marketing tactics reveal about the broken relationship between designers and their audience",
-      "starred": false,
-      "sources": [
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/cluelys-roy-lee-on-the-ragebait-strategy-for-startup-marketing/"
-        },
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/news/810319/youtube-like-button-animation-genre-user-interface-update"
-        },
-        {
-          "name": "Wired",
-          "url": "https://www.wired.com/story/uncanny-valley-podcast-wired-roundup-ai-psychosis-ftc-files-google-bedbugs/"
-        }
-      ]
-    },
-    {
-      "title": "Where design systems are heading: From static libraries to agentic workflows",
-      "description": "Microsoft's agent platform and coding AI reveal the next evolution of how designers will actually work",
+      "title": "Our take: Why modular design systems are the Stream Deck moment for creativity",
+      "description": "How Sound Blaster's modular approach reveals the future of customizable creative workflows and design tools",
       "starred": false,
       "sources": [
         {
           "name": "The Verge",
-          "url": "https://www.theverge.com/tech/809889/github-agent-hq-platform-play-microsoft-jared-palmer-jay-parikh"
+          "url": "https://www.theverge.com/news/811357/creative-sound-blaster-reimagine-modular-audio-hub-kickstarter/"
         },
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/29/solana-co-founder-anatoly-yakovenko-is-a-big-fan-of-agentic-coding/"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/10/30/figma-acquires-ai-powered-media-generation-company-weavy/"
+          "url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/"
         }
       ]
     }
