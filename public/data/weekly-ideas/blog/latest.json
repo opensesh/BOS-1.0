@@ -1,64 +1,30 @@
 {
   "type": "blog",
-  "date": "2025-11-04T17:15:30.870Z",
+  "date": "2025-11-04T19:34:15.442Z",
   "ideas": [
     {
-      "title": "Why the AI infrastructure arms race should worry every designer",
-      "description": "Microsoft, Amazon, and Google are spending billions on AI compute. Here's what it means for creative work.",
+      "title": "Why AI traffic growth means nothing without design systems thinking",
+      "description": "Shopify's 7x AI traffic surge reveals the real challenge: scaling personalized experiences without losing brand coherence",
       "starred": true,
       "sources": [
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/03/openai-and-amazon-ink-38b-cloud-computing-deal/"
+          "url": "https://techcrunch.com/2025/11/04/shopify-says-ai-traffic-is-up-7x-since-january-ai-driven-orders-are-up-11x/"
         },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/03/lambda-inks-multi-billion-dollar-ai-infrastructure-deal-with-microsoft/"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/03/microsofts-15-2b-uae-investment-turns-gulf-state-into-test-case-for-us-ai-diplomacy/"
-        }
-      ]
-    },
-    {
-      "title": "The realistic designer's guide to AI tools in 2025: What actually works",
-      "description": "Beyond the hype: which AI tools solve real design problems vs. which ones are just impressive demos",
-      "starred": true,
-      "sources": [
         {
           "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/11/04/clickup-adds-new-ai-assistant-to-better-compete-with-slack-and-notion/"
         },
         {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/03/dias-ai-browser-starts-adding-arcs-greatest-hits-to-its-feature-set/"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/04/alexa-comes-to-the-amazon-music-app/"
-        }
-      ]
-    },
-    {
-      "title": "Our perspective: Why creative industries fighting AI training are missing the point",
-      "description": "Studio Ghibli wants OpenAI to stop training on their work. We think they're solving the wrong problem.",
-      "starred": false,
-      "sources": [
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/03/studio-ghibli-and-other-japanese-publishers-want-openai-to-stop-training-on-their-work/"
-        },
-        {
           "name": "The Verge",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/812906/ai-agents-cheating-school-students"
+          "url": "https://www.theverge.com/news/813102/amazon-music-alexa-plus-ai-integration"
         }
       ]
     },
     {
-      "title": "Where design systems are heading: From static libraries to AI-powered organisms",
-      "description": "Anthropic's $70B projection signals a shift. Design systems need to evolve or become irrelevant.",
-      "starred": false,
+      "title": "The $70B question: Why Anthropic's projections should terrify most design agencies",
+      "description": "Enterprise AI demand is exploding, but most agencies are still thinking in templates instead of intelligent systems",
+      "starred": true,
       "sources": [
         {
           "name": "TechCrunch AI",
@@ -66,13 +32,55 @@
         },
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/04/clickup-adds-new-ai-assistant-to-better-compete-with-slack-and-notion/"
+          "url": "https://techcrunch.com/2025/11/04/nvidia-deutsche-telekom-strike-e1b-partnership-for-a-data-center-in-munich/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/11/03/lambda-inks-multi-billion-dollar-ai-infrastructure-deal-with-microsoft/"
         }
       ]
     },
     {
-      "title": "The power problem: Why AI's energy demands will reshape how we design",
-      "description": "Sam Altman needs more power for AI but doesn't know how much. Neither do we—and that's the real design challenge.",
+      "title": "Our perspective: Why Studio Ghibli's AI resistance reveals the future of creative work",
+      "description": "Japanese publishers blocking OpenAI training shows the real battle isn't human vs AI—it's about who controls creative intelligence",
+      "starred": false,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/11/03/studio-ghibli-and-other-japanese-publishers-want-openai-to-stop-training-on-their-work/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/11/04/anthropic-expects-b2b-demand-to-boost-revenue-to-70b-in-2028-report/"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/do-democrats-get-the-internet-yet/"
+        }
+      ]
+    },
+    {
+      "title": "Where design tools are heading: Why browser wars 2.0 will reshape our workflows",
+      "description": "Arc's influence on Dia's AI browser signals the end of desktop-first design thinking and the rise of context-aware creativity",
+      "starred": false,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/11/03/dias-ai-browser-starts-adding-arcs-greatest-hits-to-its-feature-set/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/813391/apple-mac-laptop-iphone-a-series-chip-macbook-cheaper"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/813533/openai-sora-android-launch"
+        }
+      ]
+    },
+    {
+      "title": "The infrastructure reality check: Why most designers aren't ready for AI's power demands",
+      "description": "Microsoft's multibillion-dollar AI deals reveal the hidden costs of creative AI that no one talks about in design Twitter",
       "starred": false,
       "sources": [
         {
@@ -81,7 +89,11 @@
         },
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/04/nvidia-deutsche-telekom-strike-e1b-partnership-for-a-data-center-in-munich/"
+          "url": "https://techcrunch.com/2025/11/03/lambda-inks-multi-billion-dollar-ai-infrastructure-deal-with-microsoft/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/11/03/openai-and-amazon-ink-38b-cloud-computing-deal/"
         }
       ]
     }

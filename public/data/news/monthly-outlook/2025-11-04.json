@@ -1,9 +1,9 @@
 {
   "type": "monthly-outlook",
-  "date": "2025-11-04T17:16:01.292Z",
+  "date": "2025-11-04T19:34:47.149Z",
   "updates": [
     {
-      "title": "Anthropic's aggressive revenue projections of $70B by 2028 signal intensifying competition in enterprise AI markets, with B2B adoption expected to drive unprecedented growth across foundation model providers.",
+      "title": "Anthropic projects massive revenue growth to $70B by 2028, signaling enterprise AI adoption acceleration that could reshape B2B software markets and funding expectations for AI startups throughout 2025.",
       "timestamp": "11/04/2025, 4:48 PM",
       "sources": [
         {
@@ -12,18 +12,24 @@
         },
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/02/sam-altman-says-enough-to-questions-about-openais-revenue/"
+          "url": "https://techcrunch.com/2025/11/04/shopify-says-ai-traffic-is-up-7x-since-january-ai-driven-orders-are-up-11x/"
         }
       ]
     },
     {
-      "title": "Major cloud infrastructure deals totaling over $60B between OpenAI-Amazon ($38B), Microsoft-Lambda, and Nvidia-Deutsche Telekom partnerships indicate massive scaling preparations for next-generation AI workloads.",
-      "timestamp": "11/04/2025, 2:19 PM",
+      "title": "OpenAI's Sora video generation app launches on Android following iOS release, indicating broader consumer rollout of AI video tools that could accelerate adoption among content creators and designers in coming weeks.",
+      "timestamp": "11/04/2025, 6:51 PM",
       "sources": [
         {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/04/nvidia-deutsche-telekom-strike-e1b-partnership-for-a-data-center-in-munich/"
-        },
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/813533/openai-sora-android-launch"
+        }
+      ]
+    },
+    {
+      "title": "Major cloud infrastructure deals totaling over $60B between OpenAI-Amazon ($38B), Microsoft-Lambda, and Microsoft-IREN ($9.7B) suggest massive scaling of AI compute capacity ahead of expected model releases and enterprise deployments in 2025.",
+      "timestamp": "11/03/2025, 3:21 PM",
+      "sources": [
         {
           "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/11/03/openai-and-amazon-ink-38b-cloud-computing-deal/"
@@ -39,7 +45,7 @@
       ]
     },
     {
-      "title": "Creative AI tools are expanding beyond content generation into filmmaking partnerships and music streaming integration, with LG's grandson launching AI film production company and Amazon integrating Alexa Plus into Music app.",
+      "title": "Amazon integrates Alexa Plus AI assistant into Music app and ClickUp launches enhanced AI features, indicating accelerated rollout of AI assistants across productivity and creative platforms throughout November.",
       "timestamp": "11/04/2025, 2:00 PM",
       "sources": [
         {
@@ -48,7 +54,7 @@
         },
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/03/lg-scions-stock-farm-road-utopai-launch-ai-driven-filmmaking/"
+          "url": "https://techcrunch.com/2025/11/04/clickup-adds-new-ai-assistant-to-better-compete-with-slack-and-notion/"
         },
         {
           "name": "The Verge",
@@ -57,21 +63,7 @@
       ]
     },
     {
-      "title": "Productivity tools are racing to integrate AI assistants as competitive differentiators, with ClickUp launching new AI features to compete with Slack and Notion while Dia browser adopts Arc's successful features.",
-      "timestamp": "11/04/2025, 2:00 PM",
-      "sources": [
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/04/clickup-adds-new-ai-assistant-to-better-compete-with-slack-and-notion/"
-        },
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/03/dias-ai-browser-starts-adding-arcs-greatest-hits-to-its-feature-set/"
-        }
-      ]
-    },
-    {
-      "title": "Copyright tensions are escalating globally as Studio Ghibli and Japanese publishers demand OpenAI stop training on their content, while Google faces defamation accusations over Gemma model outputs.",
+      "title": "Growing copyright tensions emerge as Studio Ghibli and Japanese publishers demand OpenAI stop training on their content, while Google faces defamation accusations over Gemma model outputs, potentially impacting AI model development and licensing deals in coming months.",
       "timestamp": "11/03/2025, 10:43 PM",
       "sources": [
         {

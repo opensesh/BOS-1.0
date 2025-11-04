@@ -1,57 +1,57 @@
 {
   "type": "long-form",
-  "date": "2025-11-04T17:15:16.206Z",
+  "date": "2025-11-04T19:33:59.629Z",
   "ideas": [
     {
-      "title": "Tutorial: Building design systems with ClickUp's new AI assistant",
-      "description": "Complete workflow for managing design tokens and components using ClickUp's AI features",
+      "title": "Tutorial: Building AI-powered e-commerce designs that convert (Shopify case study)",
+      "description": "Step-by-step workflow for creating high-converting product pages using AI design tools and Shopify's latest features",
       "starred": true,
       "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/11/04/shopify-says-ai-traffic-is-up-7x-since-january-ai-driven-orders-are-up-11x/"
+        },
         {
           "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/11/04/clickup-adds-new-ai-assistant-to-better-compete-with-slack-and-notion/"
         },
         {
           "name": "The Verge",
-          "url": "https://www.theverge.com/tech/813137/google-pixel-10-pro-fold-motherboard-nintendo-deal-sale"
-        },
-        {
-          "name": "Wired",
-          "url": "https://www.wired.com/gallery/best-smart-rings/"
+          "url": "https://www.theverge.com/news/813102/amazon-music-alexa-plus-ai-integration"
         }
       ]
     },
     {
-      "title": "Deep dive: Dia AI browser for designers - Arc features that actually matter",
-      "description": "Hands-on exploration of Dia's new Arc-inspired features and how they improve design workflows",
-      "starred": false,
-      "sources": [
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/03/dias-ai-browser-starts-adding-arcs-greatest-hits-to-its-feature-set/"
-        },
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/tech/812803/hacking-kinect-history"
-        },
-        {
-          "name": "Wired",
-          "url": "https://www.wired.com/story/seattle-tech-travel-guide/"
-        }
-      ]
-    },
-    {
-      "title": "Framework: Why AI agents can't replace design thinking (and what they're good for)",
-      "description": "Breaking down where AI helps vs hurts in creative work, with real examples from our projects",
+      "title": "Complete guide: Sora for Android + design workflow integration",
+      "description": "How to use OpenAI's new Sora Android app in your design process from concept to final video assets",
       "starred": true,
       "sources": [
         {
           "name": "The Verge",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/812906/ai-agents-cheating-school-students"
+          "url": "https://www.theverge.com/news/813533/openai-sora-android-launch"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/11/03/openai-and-amazon-ink-38b-cloud-computing-deal/"
         },
         {
           "name": "TechCrunch AI",
           "url": "https://techcrunch.com/2025/11/03/studio-ghibli-and-other-japanese-publishers-want-openai-to-stop-training-on-their-work/"
+        }
+      ]
+    },
+    {
+      "title": "Framework: Ethical AI design systems (avoiding the Studio Ghibli problem)",
+      "description": "How to build responsible AI workflows that respect copyright while maximizing creative potential",
+      "starred": false,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/11/03/studio-ghibli-and-other-japanese-publishers-want-openai-to-stop-training-on-their-work/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/11/04/anthropic-expects-b2b-demand-to-boost-revenue-to-70b-in-2028-report/"
         },
         {
           "name": "Wired",
@@ -60,32 +60,13 @@
       ]
     },
     {
-      "title": "Tutorial: Amazon Music's Alexa+ integration for design team collaboration",
-      "description": "How to set up voice commands for design reviews and project management workflows",
+      "title": "Deep dive: ClickUp's AI assistant for design team collaboration",
+      "description": "Hands-on tutorial showing how to integrate ClickUp's new AI features into your design workflow and client projects",
       "starred": false,
       "sources": [
         {
           "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/04/alexa-comes-to-the-amazon-music-app/"
-        },
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/news/813102/amazon-music-alexa-plus-ai-integration"
-        },
-        {
-          "name": "Wired",
-          "url": "https://www.wired.com/gallery/best-portable-chargers-power-banks/"
-        }
-      ]
-    },
-    {
-      "title": "Business case: How we use OpenAI's $38B AWS deal to scale our design operations",
-      "description": "Real workflow showing cloud-based AI design tools and cost optimization for agencies",
-      "starred": false,
-      "sources": [
-        {
-          "name": "TechCrunch AI",
-          "url": "https://techcrunch.com/2025/11/03/openai-and-amazon-ink-38b-cloud-computing-deal/"
+          "url": "https://techcrunch.com/2025/11/04/clickup-adds-new-ai-assistant-to-better-compete-with-slack-and-notion/"
         },
         {
           "name": "TechCrunch AI",
@@ -94,6 +75,25 @@
         {
           "name": "The Verge",
           "url": "https://www.theverge.com/podcast/813012/smart-home-questions-hotline-vergecast"
+        }
+      ]
+    },
+    {
+      "title": "Our workflow: How we use Dia browser + Arc features for design research",
+      "description": "Behind-the-scenes look at our AI-powered browser setup for design inspiration and client research workflows",
+      "starred": false,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2025/11/03/dias-ai-browser-starts-adding-arcs-greatest-hits-to-its-feature-set/"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/news/813391/apple-mac-laptop-iphone-a-series-chip-macbook-cheaper"
+        },
+        {
+          "name": "Wired",
+          "url": "https://www.wired.com/story/seattle-tech-travel-guide/"
         }
       ]
     }
