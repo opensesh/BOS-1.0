@@ -13,7 +13,7 @@ export default function ArchitectureBlock() {
   useEffect(() => {
     const fetchArchitecture = async () => {
       try {
-        const response = await fetch(ARCHITECTURE_PATH)
+        const response = await fetch(encodeURI(ARCHITECTURE_PATH))
         if (!response.ok) {
           console.error('Failed to fetch architecture:', response.status, response.statusText)
           setContent('# Error: File not found\n\nThe architecture markdown could not be loaded.')

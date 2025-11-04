@@ -37,7 +37,7 @@ export default function MarkdownBlock() {
   useEffect(() => {
     const fetchGuideline = async () => {
       try {
-        const response = await fetch(selectedGuideline.path)
+        const response = await fetch(encodeURI(selectedGuideline.path))
         if (!response.ok) {
           console.error('Failed to fetch guideline:', response.status, response.statusText)
           setGuidelineContent('# Error: File not found\n\nThe markdown file could not be loaded. Please check if the file exists.')
@@ -59,7 +59,7 @@ export default function MarkdownBlock() {
 
     const fetchWriting = async () => {
       try {
-        const response = await fetch(selectedWritingStyle.path)
+        const response = await fetch(encodeURI(selectedWritingStyle.path))
         if (!response.ok) {
           console.error('Failed to fetch writing style:', response.status, response.statusText)
           setWritingContent('# Error: File not found\n\nThe markdown file could not be loaded. Please check if the file exists.')
