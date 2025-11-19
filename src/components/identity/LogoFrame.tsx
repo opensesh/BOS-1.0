@@ -284,7 +284,7 @@ const LogoFrame = forwardRef<LogoFrameHandle, LogoFrameProps>(({
     }
 
     // For all other logos (including core), use square sizing
-    const sizeScale = '85.5%'
+    const sizeScale = '64.1%' // Reduced by 25% from 85.5%
     return (
       <div className="w-full h-full flex items-center justify-center overflow-hidden">
         <div
@@ -375,9 +375,8 @@ const LogoFrame = forwardRef<LogoFrameHandle, LogoFrameProps>(({
                         return `bg-brand-charcoal ${borderColor} text-brand-vanilla`
                       }
                       if (color === 'Glass') {
-                        // Glass button: mono 50 fill with vanilla text and border
-                        const textColor = currentColor === 'Vanilla' ? 'text-brand-vanilla' : 'text-brand-charcoal'
-                        return `bg-[#808080] border-brand-vanilla ${textColor}`
+                        // Glass button: mono 50 fill with vanilla text and border (always vanilla)
+                        return `bg-[#808080] border-brand-vanilla text-brand-vanilla`
                       }
                       if (color === 'Vanilla') {
                         return 'bg-brand-vanilla border-black text-black'
