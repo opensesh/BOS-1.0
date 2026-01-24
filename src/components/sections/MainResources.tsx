@@ -80,7 +80,7 @@ export default function MainResources() {
   }, [])
 
   return (
-    <section className="w-full max-w-[1184px] mx-auto px-6 sm:px-12 mt-24 mb-32">
+    <section className="w-full max-w-[1400px] mx-auto px-6 sm:px-12 xl:px-16 mt-24 mb-32">
       {/* Main Resources Heading */}
       <h2 className="font-display text-h1-mobile md:text-h1-tablet xl:text-h1-desktop text-brand-vanilla mb-6">
         Main Resources

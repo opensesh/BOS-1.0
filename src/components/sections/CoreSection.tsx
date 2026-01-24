@@ -100,7 +100,7 @@ export default function CoreSection({ defaultOpen = true, lazyLoad = false }: Pr
   ]
 
   return (
-    <div ref={ref} className="w-full max-w-[1184px] mx-auto px-6 md:px-12 py-20">
+    <div ref={ref} className="w-full max-w-[1400px] mx-auto px-6 md:px-12 xl:px-16 py-20">
       <SectionDropdown
         title="Core"
         number="01"

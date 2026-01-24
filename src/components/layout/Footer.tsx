@@ -52,7 +52,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#1e1e1e] w-full">
-      <div className="max-w-[1327px] mx-auto px-6 py-20 flex flex-wrap gap-[60px] items-end justify-between">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 xl:px-12 py-20 flex flex-wrap gap-[60px] items-end justify-between">
         {/* Left Section: Logo and Tagline */}
         <div className="flex-1 min-w-[260px] flex flex-col items-start pr-12">
           {/* Logo - Using single combo SVG to preserve aspect ratio */}

@@ -400,7 +400,7 @@ export default function AnchorLinkWidget({ menuOpen, setMenuOpen }: AnchorLinkWi
         className="fixed bg-brand-charcoal border border-[#787878] rounded-lg shadow-lg transition-all duration-300 ease-out z-40"
         style={{
           top: `${headerHeight + 12}px`,
-          right: menuOpen ? 'max(24px, calc((100vw - 1184px) / 2 + 24px))' : '-480px',
+          right: menuOpen ? 'max(24px, calc((100vw - 1400px) / 2 + 24px))' : '-480px',
           width: 'min(448px, calc(100vw - 48px))',
         }}
       >

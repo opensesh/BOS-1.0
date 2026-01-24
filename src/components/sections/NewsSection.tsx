@@ -69,7 +69,7 @@ export default function NewsSection({ defaultOpen = false, showSourceInput = tru
   return (
     <section
       id="news"
-      className="w-full max-w-[1184px] mx-auto px-6 sm:px-12 py-12 md:py-16 xl:py-20"
+      className="w-full max-w-[1400px] mx-auto px-6 sm:px-12 xl:px-16 py-12 md:py-16 xl:py-20"
     >
       <div className="flex flex-col gap-6">
         {/* Section Header */}

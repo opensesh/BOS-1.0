@@ -31,7 +31,7 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 bg-brand-charcoal border-b border-[#595959]">
-        <div className="w-full max-w-[1184px] mx-auto px-6 py-3 flex items-center justify-between">
+        <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-10 xl:px-12 py-3 flex items-center justify-between">
           {/* Brand Logo - Small Icon */}
           <div className="flex items-center">
             <button onClick={handleScrollToTop} className="flex items-center cursor-pointer">
