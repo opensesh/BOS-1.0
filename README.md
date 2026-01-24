@@ -1,4 +1,4 @@
-# BRAND-OS
+# BOS-1.0
 
 **A design system built for both humans and AI to interpret.**
 
