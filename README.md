@@ -1,5 +1,7 @@
 # BOS-1.0
 
+> **Note:** This is Brand Operating System version 1 — a purely experimental test exploring how Figma, MCP servers, Claude Code, and Cursor can work together to build and maintain a living design system. This repo served as our sandbox for vibe-coding workflows and AI-driven design tooling before evolving into BOS-2.0 and beyond.
+
 **A design system built for both humans and AI to interpret.**
 
 BRAND-OS is not just a traditional design system—it's a comprehensive brand operating system designed for the present and the future. Built as a living, breathing repository that serves both human designers and AI agents, this system bridges the gap between pixel-perfect design and machine-readable brand intelligence.
