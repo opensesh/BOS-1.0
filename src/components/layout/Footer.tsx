@@ -92,12 +92,12 @@ export default function Footer() {
             <div className="flex flex-wrap gap-2">
               {[
                 { Icon: OpenSessionIcon, label: 'Website', url: 'https://opensession.co/' },
-                { Icon: SubstackIcon, label: 'Newsletter', url: 'https://open-session.link/substack-website' },
-                { Icon: MediumIcon, label: 'Medium', url: 'https://open-session.link/medium-website' },
-                { Icon: YouTubeIcon, label: 'YouTube', url: 'https://open-session.link/youtube-website' },
-                { Icon: FigmaIcon, label: 'Figma', url: 'https://open-session.link/figma-website' },
-                { Icon: InstagramIcon, label: 'Instagram', url: 'https://open-session.link/instagram-website' },
-                { Icon: LinkedInIcon, label: 'LinkedIn', url: 'https://open-session.link/linkedin-website' },
+                { Icon: SubstackIcon, label: 'Newsletter', url: 'https://link.opensession.co/website-substack' },
+                { Icon: MediumIcon, label: 'Medium', url: 'https://link.opensession.co/website-medium' },
+                { Icon: YouTubeIcon, label: 'YouTube', url: 'https://link.opensession.co/website-youtube' },
+                { Icon: FigmaIcon, label: 'Figma', url: 'https://link.opensession.co/website-figma' },
+                { Icon: InstagramIcon, label: 'Instagram', url: 'https://link.opensession.co/website-instagram' },
+                { Icon: LinkedInIcon, label: 'LinkedIn', url: 'https://link.opensession.co/website-linkedin' },
               ].map(({ Icon, label, url }) => (
                 <a
                   key={label}

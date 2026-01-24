@@ -483,7 +483,7 @@ export default function AnchorLinkWidget({ menuOpen, setMenuOpen }: AnchorLinkWi
             <h3 className="font-text text-caption uppercase text-brand-vanilla">Quick Links</h3>
             <div className="flex gap-2">
               <a
-                href="https://www.figma.com/design/t6ibLjzJFXY6HzU0bIahxw/BRAND-OS?node-id=11107-68411&t=w51tqPrTUlDRqfak-1"
+                href="https://link.opensession.co/website-figma"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 min-w-[132px] bg-white text-brand-charcoal rounded-full px-4 py-3 font-text text-button flex items-center justify-center gap-2 hover:bg-brand-aperol hover:text-white transition-colors"
@@ -498,7 +498,7 @@ export default function AnchorLinkWidget({ menuOpen, setMenuOpen }: AnchorLinkWi
                 </svg>
               </a>
               <a
-                href="https://github.com/opensesh"
+                href="https://link.opensession.co/website-github"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 min-w-[132px] bg-white text-brand-charcoal rounded-full px-4 py-3 font-text text-button flex items-center justify-center gap-2 hover:bg-brand-aperol hover:text-white transition-colors"
