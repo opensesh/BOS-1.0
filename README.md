@@ -2,6 +2,8 @@
 
 > **Note:** This is Brand Operating System version 1 — a purely experimental test exploring how Figma, MCP servers, Claude Code, and Cursor can work together to build and maintain a living design system. This repo served as our sandbox for vibe-coding workflows and AI-driven design tooling before evolving into BOS-2.0 and beyond.
 
+> **Archive Notice:** This site was originally powered by automated AI content generation using the Anthropic API. The Inspiration Engine and News Curation features ran daily to generate fresh content. As of January 2026, this repository has been frozen as a static demo—all existing content in `public/data/` is preserved as a historical snapshot, but no new content is generated. This eliminates API key requirements and recurring costs while keeping the site fully functional.
+
 **A design system built for both humans and AI to interpret.**
 
 BRAND-OS is not just a traditional design system—it's a comprehensive brand operating system designed for the present and the future. Built as a living, breathing repository that serves both human designers and AI agents, this system bridges the gap between pixel-perfect design and machine-readable brand intelligence.
@@ -43,11 +45,11 @@ This dual-purpose approach means your design system doesn't just document your b
 - **Brand Guidelines** - Complete brand documentation
 - **Code Snippets** - Reusable component examples
 
-### 🤖 AI Integration
-- **`/news-update`** - Generate fresh news summaries from RSS feeds
-- **`/content-ideas`** - AI-generated content ideas aligned with brand pillars
-- **News Source Management** - Add URLs directly through the UI, auto-categorized by AI
-- **Automated Generation Scripts** - `npm run ideas:generate` and `npm run news:generate`
+### 🤖 AI Integration (Archived)
+- **`/news-update`** - Previously generated fresh news summaries from RSS feeds
+- **`/content-ideas`** - Previously generated AI content ideas aligned with brand pillars
+- **News Source Management** - URLs added through the UI, auto-categorized by AI
+- **Note:** Content generation is now frozen. Existing data in `public/data/` serves as a historical snapshot.
 
 ## 🚀 Quick Start
 
@@ -60,12 +62,6 @@ npm run dev
 
 # Build for production
 npm run build
-
-# Generate AI content ideas
-npm run ideas:generate
-
-# Generate news updates
-npm run news:generate
 ```
 
 Visit `http://localhost:5173` to see the design system in action.
@@ -90,9 +86,6 @@ Visit `http://localhost:5173` to see the design system in action.
 │   │       ├── long-form/
 │   │       └── blog/
 │   └── assets/                # Static brand assets
-├── scripts/
-│   ├── generate-weekly-ideas.js    # AI content idea generation
-│   └── generate-news-updates.js    # AI news curation
 ├── src/
 │   ├── components/
 │   │   ├── identity/          # Logo, colors, typography
